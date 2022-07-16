@@ -1,0 +1,105 @@
+## Data Definition Language(DDL)
+
+CREATE TABLE Employee(A integer PRIMARY KEY, B string NOT NULL, C string NOT NULL, D string NOT NULL);
+CREATE TABLE Students( N string NOT NULL, A integer NOT NULL, R integer  PRIMARY KEY, C integer NOT NULL);
+CREATE TABLE Departments(N string NOT NULL, C integer PRIMARY KEY);
+SHOW TABLES;
+ALTER TABLE Departments ADD CONSTRAINT PK_Departments PRIMARY KEY(C);
+ALTER TABLE Students ADD CONSTRAINT PK_Students PRIMARY KEY(R);
+ALTER TABLE Students ADD CONSTRAINT FK_Students FOREIGN KEY (C) REFERENCES Departments(C) on DELETE CASCADE;
+ALTER TABLE Students ADD CONSTRAINT check_id_non_zero CHECK (R > 0);
+DESCRIBE TABLE Students;
+ALTER TABLE Students DROP CONSTRAINT check_id_non_zero;
+ALTER TABLE Students DROP COLUMN C;
+ALTER TABLE Students DROP CONSTRAINT PK_Students;
+DESCRIBE TABLE Students;
+ALTER TABLE Students ADD COLUMN D INTEGER NOT NULL;
+ALTER TABLE Students ADD COLUMN C INTEGER NOT NUL
+ALTER TABLE Students ADD CONSTRAINT PK_Students PRIMARY KEY(R);
+DESCRIBE TABLE Students;
+
+ALTER TABLE Employee ADD FD (AB->C, AB->D, C->A, D->B);
+FIND NF FOR Employee;
+DESCRIBE TABLE Employee;
+
+DROP TABLE Students;
+DROP TABLE Departments;
+DROP TABLE Employee;
+SHOW TABLES;
+
+## Data Manipulation Language(DML)
+
+CREATE TABLE Departments(N string NOT NULL, C integer PRIMARY KEY);
+ALTER TABLE Departments ADD CONSTRAINT PK_Departments PRIMARY KEY(C);
+CREATE TABLE Students( N string NOT NULL, A integer NOT NULL, R integer  PRIMARY KEY, C integer NOT NULL);
+ALTER TABLE Students ADD CONSTRAINT PK_Students PRIMARY KEY(R);
+ALTER TABLE Students ADD CONSTRAINT FK_Students FOREIGN KEY (C) REFERENCES Departments(C) on DELETE CASCADE;
+
+INSERT INTO Departments VALUES('DSE', '1001');
+INSERT INTO Departments VALUES('CHE', '1002');
+INSERT INTO Departments VALUES('CHE', '1003');
+INSERT INTO Departments VALUES('CSE', '1004');
+
+INSERT INTO Students VALUES('ayub ali', '35', '100', '1001');
+INSERT INTO Students VALUES('tamer', '30', '110', '1004');
+INSERT INTO Students VALUES('mikcle', '32', '105', '1001');
+INSERT INTO Students VALUES('mike pnce', '32', '106', '1004');
+INSERT INTO Students VALUES('Jhone Jay', '35', '107', '1001');
+INSERT INTO Students VALUES('Hoe', '65', '108', '1004');
+INSERT INTO Students VALUES('Woe', '25', '109', '1001');
+INSERT INTO Students VALUES('Manny', '66', '111', '1003');
+
+# SELECT , GROUPBY
+SELECT * FROM students;
+SELECT * FROM Departments;
+SELECT * FROM students GROUPBY(C);
+SELECT * FROM students GROUPBY(A, C);
+SELECT * FROM students WHERE A >= 30  and A <= 60;
+SELECT * FROM students WHERE A >= 30  or C = 1001;
+SELECT * FROM students WHERE N == Manny;
+SELECT * FROM students WHERE A >= 30  and A <= 60 GROUPBY(A, C);
+SELECT * FROM students WHERE A >= 30  and A <= 60 GROUPBY(C);
+
+# SET OPERATION
+(SELECT * FROM students WHERE A <= 40)  UNION (SELECT * FROM students WHERE C == 1001);
+(SELECT * FROM students WHERE A <= 40)  INTERSECTION (SELECT * FROM students WHERE C == 1001);
+(SELECT * FROM students WHERE A <= 40)  DIFFERENCE (SELECT * FROM students WHERE C == 1001);
+
+# JOIN OPERATION
+SELECT * FROM Students NATURALJOIN Departments;
+SELECT * FROM Students JOIN Departments ON Students.C = Departments.C;
+SELECT * FROM Students CROSSJOIN Departments;
+
+
+# DELETE OPERTION
+
+SELECT * FROM students;
+DELETE FROM students WHERE R = 111;
+SELECT * FROM students;
+ -- on DELETE CASCADE
+SELECT * FROM students;
+DELETE FROM Departments WHERE C = 1001;
+SELECT * FROM students;
+
+ -- on SET NULL
+ DELETE FROM Departments;
+ DELETE FROM students;
+   
+ ALTER TABLE Students DROP CONSTRAINT FK_Students;
+ ALTER TABLE Students ADD CONSTRAINT  FK_Students FOREIGN KEY (C) REFERENCES Departments(C) on DELETE SET NULL;
+
+INSERT INTO Departments VALUES('DSE', '1001');
+INSERT INTO Departments VALUES('CHE', '1002');
+INSERT INTO Departments VALUES('CHE', '1003');
+INSERT INTO Departments VALUES('CSE', '1004');
+
+INSERT INTO Students VALUES('ayub ali', '35', '100', '1001');
+INSERT INTO Students VALUES('tamer', '30', '110', '1004');
+INSERT INTO Students VALUES('mikcle', '32', '105', '1001');
+INSERT INTO Students VALUES('mike pnce', '32', '106', '1004');
+INSERT INTO Students VALUES('Jhone Jay', '35', '107', '1001');
+INSERT INTO Students VALUES('GD', '50', '112', '1001');
+
+SELECT * FROM students;
+DELETE FROM Departments WHERE C = 1001;
+SELECT * FROM students

@@ -1,0 +1,1092 @@
+Q. Which of the following is not an example of real world data tensor>
+A. Vector data— 2D tensors of shape
+B. Timeseries data or sequence data— 2D tensors of shape
+C. Images— 4D tensors of shape
+D. Video— 5D tensors of shape
+Answer:B
+
+Q. Which of the following is not true about nural networks
+A. Learning means finding a combination of model parameters that minimizes a loss function
+B. The loss is the quantity you’ll attempt to minimize during training
+C. The optimizer specifies the exact way in which the gradient of the loss will be used to update parameters
+D. Gradient is used in initialize model.
+Answer:D
+
+Q. A sequence data stored in 3D tensors(samples, timesteps, features) is typically processed by
+A. Dense layer
+B. Recurrent layers
+C. 2D Conv
+D. 3D Conv
+Answer: B
+
+Q. Which of the following is not a activation function?
+A. ReLu
+B. Sigmoid
+C. Elu
+D. Sine
+Answer: D
+
+Q. We want final layer output as a probability which of the following activation we may use?
+A. ReLu
+B. Sigmoid
+C. Elu
+D. Tanh
+Answer: B
+
+Q. In Binary Classification problem. Network should end with
+A. A Dense layer with one unit and sigmoid activation
+B. A Dense layer with two unit and sigmoid activation
+C. A Dense layer with two unit and relu activation
+D. A Dense layer with one unit and softmax activation
+Answer: A
+
+Q. Which of the following is not true for MultiClass Classification?
+A. To Classify N Classes, Network should end with a Dense of size N
+B. Network should end with softmax activation
+C. Network should end with sigmoid activation
+D. To classify large number of categories, Network should void create information
+bottlenecks due to intermediate layers is too small
+Answer: C
+
+Q. Which of the following is not true.
+A. Optimization refers to the process of getting the best performance possible on the training data
+B. Generalization refers to how well the trained model performs on data it has never seen before
+C. The simplest way to prevent overfitting is to increase the size of the model
+D. The processing of fighting overfitting this way is called regularization
+Answer: C
+
+Q. Which of the following is not a regularization technique?
+A. L1 regularization
+B. SGD regularization
+C. L2 regularization
+D. Dropout
+Answer:B
+
+Q. which is not example of pretained mode?
+A. ResNet
+B. VGG
+C. Inception
+D. ImageNet
+Answer: D
+
+Q. Pretained models are part of ----- ?
+A. keras.applications
+B. Sklearn.applications
+C. ImageNet.applications
+D. MobiNet.applications
+Answer:A
+
+Q. The algorithm for sequence processing is
+A. CNN
+B. VGG16
+C. RNN
+D. InceptionNet
+Answer: C
+
+Q. In order to solve problem of Vanishing gradient we used
+A. RNN
+B. LSTM
+C. DNN
+D. CNN
+Answer: B
+
+Q. What is GloVe?
+A. A RNN pretained model
+B. A CNN pretained models
+C. A word embedding technique
+D. A character embedding technique
+Answer: C
+
+Q. Which of the following is not RNN?
+A. SimpleRNN
+B. GAN
+C. LSTM
+D. GRU
+Answer: B
+
+Q. Question-answering model is an example of
+A. Multi-input model
+B. Multi-output model
+C. Single-input model
+D. Sinle-output model
+Answer: A
+
+===========================Kiwook =================
+
+1. What is the correct order to fit a deep learning model?
+A. model.fit(ephochs=5, batch_size=128, train_labels, train_images)
+B. model.fit(train_labels, train_images, ephochs=5, batch_size=128)
+C. model.fit(train_images, train_labels, ephochs=5, batch_size=128) <- Answer
+D. model.fit(batch_size=128, train_labels, train_images, ephochs=5)
+
+2. What is "How the network will be able to measure its performance on the training data, and thus how it will be able to steer itself in the right direction."?
+A. softmax layer
+B. loss function <- Answer
+C. optimizer
+D. metrics to monitor during training and testing
+
+1. Without A, your network can only learn linear transformations of the input data. What is A?
+A. activation function <- Answer
+B. optimizer
+C. batch
+D. epoch
+
+2. What is an activation function meant to zero out negative values?
+A. leaky relu
+B. sigmoid
+C. relu <- Answer
+D. tanh
+
+Ch4
+1. What is the learning type of "an agent receives information about its environment and learns to choose actions that will maximize some reward."?
+A. Supervised learning
+B. Unspuervised learning
+C. Self-supervised learning
+D. Reinforcement learning <- Answer
+
+2. What is NOT the methods to handle overfitting?
+A. Reducing the network's size
+B. Increasing the network's size <- Answer
+C. Adding weight regularization
+D. Adding dropout
+
+1. What is the technique to aggressively downsample feature maps, much like strided convolutions?
+A. data augmention
+B. K-fold cross-validation
+C. Softmax layer
+D. max-pooling <- Answer
+
+2. What is the techinique for the below code?
+datagen = ImageDataGenerator(
+    rotation_range=40,
+    width_shift.range=0.2)
+A. data augmention <- Answer
+B. K-fold cross-validation
+C. Softmax layer
+D. max-pooling
+
+1. What is the characteristic of word embeddings comparing with one-hot word vectors?
+A. Dense
+B. Hardcoded <- Answer
+C. Lower-dimensional
+D. Learned from data
+
+2. In practice, why is LSTME or GRU used instead of simpleRNN?
+A. because of the vanishing gradient problem <- Answer
+B. because LSTIM or GRU is more traditional layers
+C. because of the simplicity of LSIM or GRU
+D. because Keras doesn't have simpleRNN layers
+
+1. What is Not the reason to use Keras callbacks?
+A. Model checkpointing
+B. Lately stopping <- Answer
+C. Dynamically adjusting the value of certain parameters during training
+D. Logging training and validation metrics during training, or visualizaing the representations learned by the model as they're updated
+
+Why do we use Batch Normalization?
+A. To adaptively normalize data even as the mean and variance change over time during training
+B. To help with gradient prpagation
+C. To allow for deeper networks
+D. To train small models from scratch on limited data <- Answer
+
+1. What is WRONG description of the networks in a GAN?
+A. Generator network: Takes as input a random vector (a random point in the latent space), and decodes it into a synthetic image
+B. Discriminator network: Is trained to be able to fool the generator network <- Answer
+C. Generator network: Is trained to be able to fool the discriminator network
+D. Discriminator network: Takes as input an image (real or synthetic), and predicts whether the image is "real" or "fake"
+
+2. What is the technique that a content image and a style image are combined to produce interesting-looking results?
+Test generation with LSTM
+A. DeepDream
+B. Style Transfer <- Answer
+C. GAN
+D. Lecture Slides
+
+What is a model-based algorithm?
+A. Dynamic programming < Answer
+B. Monte Carlo
+C. SARSA
+D. Q-learning
+
+================================  Andrea Ceres  ==================
+Which is not a key feature of Keras?
+
+A - It has a user-friendly API.
+B - It eliminates the need to use cloud computing resources. -- Answer
+C - It has built-in support for convolutional neural networks and recurrent neural networks.
+D - It supports arbitrary network architectures.
+
+When are hyperparameters tuned?
+A - During preprocessing.
+B - Before model fitting.
+C - After evaluating a model on a validation set. -- Answer
+D - After evaluating a model on a test set.
+
+Which of the following is not an approach to correct overfitting?
+A - Train for more epochs. -- Answer
+B - Add dropout.
+C - Tune the hyperparameters.
+D - Add L1 and/or L2 regularization.
+
+Which of the following is an incorrect last-layer activation for the given problem type?
+A - sigmoid for binary classification
+B - softmax for multiclass, single-label classification
+C - softmax for multiclass, multilabel classification-- Answer
+D - sigmoid for regression to values between 0 and 1
+
+What is the resulting dimensions after a 2x2 maxpooling layer on an input layer of dimensions (26, 26, 32)?
+A - (13, 13, 32)-- Answer
+B - (13, 13, 16)
+C - (52, 52, 32)
+D - (52, 52, 64)
+
+Which of the following is not true about data augmentation?
+A - Data augmentation allows the model to see the exact same picture twice during training.-- Answer
+B - Data augmentation exposes the model to more aspects of the data.
+C - Data augmentaton is a powerful way to fight overfitting when you're working with image data.
+D - Data augmentation helps the model generalize better.
+
+
+Which of the following is true about the bag-of-words model?
+A - Bag-of-words preserves the order of tokens.
+B - Bag-of-words is a deep learning model specific to text processing.
+C - Bag-of-words consistently outperforms one-dimensional convnets and recurrent neural networks.
+D - Bag-of-words is a powerful feature-engineering tool for logistic regression and random forests.-- Answer
+
+Which of the following is a popular natural language processing model?
+A - Xception
+B - BERT-- Answer
+C - MobileNet
+D - VGG16
+
+Which of the following is true?
+A - Keras functional API offers a simpler, user-friendly interface alternative to Keras Sequential class.
+B - Keras Sequential class allows you to build completely arbitrary deep learning architectures.
+C - Keras Sequential class makes the assumption that the network has any number of inputs but exactly one output.
+D - Keras functional API manipulates the data tensors and applys layers to each tensor as if they were functions.-- Answer
+
+Which is not a use of callbacks?
+A - Model checkpointing
+B - Early stopping
+C - Fixing parameter values during training -- Answer
+D - Logging training and validation metrics during training
+
+How do variational autoencoders improve upon classical autoencoders?
+A - Variational autoencoders mix ideas from deep learning with Bayesian inference.-- Answer
+B - Variational autoencoders allow for more refined feature engineering.
+C - The parameters of variational autoencoders are trained via one loss function instead of two.
+D - Variational autoencoders learns to reconstruct the original input image.
+
+Which of the following is true about generative adversarial networks?
+A - A generator network is trained to differentiate between the output of the discriminator network and real images from a training dataset.
+B - Randomness is reduced by using dropout in the discriminator.
+C - The discriminator is trained to fool the generator.
+D - Unlike in other deep learning models, sparse gradients can hinder GAN training.-- Answer
+
+Which of the following is not an approach to solve reinforcement learning problems?
+A - Dynamic programming
+B - Generative adversarial networks -- Answer
+C - Monte Carlo
+D - Temporal difference learning
+
+Which of the following measures how good or bad a particular state is in reinforcement learning?
+A - The reward
+B - The state-value function-- Answer
+C - The action-value function
+D - The greedy policy
+
+Slides and Lecture Notes
+Which image filter operation is accomplished by the kernel 0−10−15−10−10[0−10−15−10−10]?
+A - Horizontal edge detection
+B - Vertical edge detection
+C - Blurring
+D - Sharpening-- Answer
+
+========================================= jiffar =======================================
+Which of the following is NOT an event that happened after 2012 leading to the take-off of deep learning?
+A. improved hardware
+B. better datasets and benchmarks
+C. algorithmic advances
+D. invention of neural networks
+Answer: d
+
+Which of the following is NOT an algorithmic improvement that allowed for better gradient propagation around starting 2009-2010?
+A. better activation functions
+B. better weight-initialization schemes
+C. better binary sorting schemes
+D. better optimization schemes
+Answer: c
+
+Which of the following is NOT something needed to train a neural network?
+A. a loss functions
+B. support vectors for establishing the decision boundaries
+C. an optimizer
+D. metrics to monitor training and testing
+Answer: b
+
+
+In order to select 14 × 14 pixels in the bottom-right corner of all images, for a sample of 10,000 images each with 28 X 28 pixels saved as sample_images (shape: 10000,28,28), you would use which of the following slicing operation:
+a. sample_images[:, :14, :14]
+b. sample_images[:14, 14:, :]
+c. sample_images[:, 14:, 14:]
+d. sample_images[:, 14:14]
+Answer: c
+
+
+Which of the following represents the shape of a dataset of 500 documents of text with the original documents containing word counts of 200 words each, where each document now contains the counts of how many times each word appears in it out of a dictionary of 20,000 common words:
+A. (500, 200)
+B. (200, 500)
+C. (500,20000,200)
+D. (500,20000)
+Answer: d
+
+Why is the negative gradient used to update the weights in gradient decent?
+A. Because the weights are located in the third quadrant of the coordinate plane
+B. Because the weights are updated in the opposite direction of greatest increase
+C. Because the slopes always compute to negative values in a neural network
+D. Because negative numbers are suited for computing roots of imaginary numbers
+Answer: b
+
+How many gradient updates will be performed on 60,000 training samples trained for 5 epochs with batch size of 128?
+A. 2,345
+B. 469
+C. 640
+D. 300,000
+Answer: a
+
+Which one of the following is NOT one of the four broad categories that machine-learning falls into?
+A. supervised learning
+B. unsupervised learning
+C. self-supervised learning
+D. clustering
+Answer: d
+
+Which of the following is NOT an example of self-supervised learning?
+A. Autoencoder
+B. Predicting the next frame of a video using previous frames
+C. Predicting the next word in a text using given previous words
+D. Given a picture, segmenting the objects into distinct units
+Answer: d
+
+Which of the following is true about reinforcement learning (RF)?
+A. RF is the most popular form of machine learning used across many industries
+B. In RF an agent receives information about its environment and learns to choose action that will maximize some reward
+C. In RF an agent sends information to its environment and changes the environment by minimizing some reward
+D. In RF there are still labels involved that are generated from the input data
+Answer: b
+
+Which of the following is NOT one of the ways to prevent overfitting in neural networks?
+A. Get more training data
+B. Reduce capacity of the network
+C. Add weight regularization
+D. Increase the number of layers
+Answer: d
+
+
+Which of the following is false about convolutional neural nets (convnets)?
+A. patterns convnets learn are translation variant (after learning a pattern in the lower corner of a picture, the convent can recognize it only if in same position)
+B. a first convent layer will learn small local patterns such as edges
+C. a second convnet layer will learn larger patterns made of features of first layer
+D. convents learn increasingly complex and abstract visual concepts
+Answer: a
+
+===================================================Patrick Jean-Baptiste ============
+All of the following statements about non-linear activation functions are true EXCEPT:
+a) They allow models to generate multiple outputs.
+b) They allow models to learn affine transformations of the input data.
+c) They allow models to produce deep representations.
+d) They allow backpropagation.
+ANSWER: b)
+
+Which of the following belongs to the category of unsupervised learning?
+a) Image segmentation
+b) Scalar regression
+c) Dimensionality reduction
+d) Autoencoders
+ANSWER: c)
+
+Which is TRUE about the max-pooling operation?
+a) It slightly adjusts the more abstract representations of the model.
+b) It prevents the weights from being updated during training.
+c) It generates more training data from existing training samples.
+d) It reduces the number of feature map coefficients.
+ANSWER: d)
+
+What is the benefit of visualizing intermediate activations?
+a) To understand which image segments were identified as belonging to a specified class.
+b) To understand what pattern each filter is receptive to.
+c) To understand how consecutive convnet layers transform the given input.
+d) To understand how convnet layers see the world.
+ANSWER: c)
+
+What is a drawback of using bidirectional RNNs?
+a) They do not perform as well on sequence data with more information in the recent past.
+b) They are much more expensive than regular RNNs.
+c) They do not exploit the order sensitivity of RNNs.
+d) They are not always relevant to smaller, simpler problems.
+ANSWER: a)
+
+Which of the following statements about an LSTM layer is FALSE?
+a) It prevents older signals from gradually vanishing.
+b) It has more representational power than a GRU layer.
+c) It adds a way to carry information across many timesteps.
+d) It is cheaper to run compared to a GRU layer.
+ANSWER: d)
+
+Which callback strategy is effective for getting out of local minima during training?
+a) Early stopping
+b) Reduce learning rate on plateau
+c) CSV logging
+d) Model checkpointing
+ANSWER: b)
+
+In order to build a model that is fast and light with higher representational efficiency, which should be considered first above all?
+a) Hyperparameter optimization
+b) Depthwise separable convolution
+c) Model ensembling
+d) Batch normalization
+ANSWER: b)
+
+All of the following statements are true about GANs EXCEPT:
+a) The generator provides the information it has about the data.
+b) Sparse gradients can hinder training.
+c) The learned latent space does not have a neat continuous structure.
+d) Stochasticity is good to induce robustness.
+ANSWER: a)
+
+For neural style transfer, the content of the target image is described as the:
+a) Visual patterns in the image.
+b) Textures at various spatial scales.
+c) Global macrostructure of the image.
+d) Inner product of the feature maps of a given layer.
+ANSWER: c)
+
+In terms of reinforcement learning, what causes the environment to change?
+a) The agent performing an action.
+b) The agent reaching the terminal state.
+c) The agent receiving a reward.
+d) The agent transitioning between different states.
+ANSWER: a)
+
+Which of the following does NOT describe the purpose of a Q-function?
+a) It represents the quality of a given action.
+b) It learns from actions that are outside the current policy.
+c) It finds the best action given a state.
+d) It is a measure to maximize the expected action.
+ANSWER: d)
+
+The result of convolving an image with the kernel −12−1−12−1−12−1 will produce what type of edges?
+a) Horizontal edges
+b) No edges
+c) Vertical edges
+d) Oblique edges
+ANSWER: c)
+
+Which machine learning problem for images is most likely to incorporate clustering methods?
+a) Binary classification
+b) Localization
+c) Multi-label classification
+d) Segmentation
+ANSWER: d)
+
+The activation function that converts a real vector to a vector of categorical probabilities is described as:
+a) ReLU
+b) Softmax
+c) Tanh
+d) Sigmoid
+ANSWER: b)
+
+If a model overfits to the data, which should NOT be performed to handle overfitting?
+a) Remove layers.
+b) Add dropout.
+c) Increase model capacity.
+d) Apply regularization.
+ANSWER: c)
+
+Which of the following statements about bag-of-words is FALSE?
+a) The order of tokens is ignored.
+b) It converts arbitrary text into fixed-length vectors.
+c) The words cannot be n-grams.
+d) Each vector represents how many times each word appears.
+ANSWER: c)
+
+Which of the following is a FALSE statement about the BERT model?
+a) It learns text representations.
+b) It uses a directional transformer.
+c) It uses three embeddings to compute input representations.
+d) It employs a deep neural network.
+ANSWER: b)
+
+Which of the following is TRUE about the output gate of an LSTM?
+a) It decides what information should be kept or thrown away.
+b) It decides what the next hidden state should be.
+c) It updates the cell state.
+d) It transforms values to be between 0 and 1.
+ANSWER: b)
+
+Which of the following uses regularization to activate a fraction of neurons?
+a) Sparse autoencoders
+b) Variational autoencoders
+c) DeepDream
+d) Denoising autoencoders
+ANSWER: a)
+
+The problem of image-to-image translation where training samples are not paired is addressed by:
+a) Pix2Pix
+b) StyleGAN
+c) DCGAN
+d) CycleGAN
+ANSWER: d)
+
+Which of the following best describes white-box adversarial attacks?
+a) The attacker does not have access to the model’s parameters.
+b) The attacker has knowledge about the model’s predictions.
+c) The attacker has access to the model’s parameters.
+d) The attacker has no knowledge about the model’s predictions.
+ANSWER: c)
+
+Which of the following is TRUE about the Monte Carlo method for reinforcement learning?
+a) It assumes environment dynamics are available.
+b) It updates the value functions after each step.
+c) It is an improvement over the Temporal Difference method.
+d) It interacts with the environment.
+ANSWER: d)
+
+=============================================== tom duffy ================
+
+We want to build an autoencoder with a squeeze layer in the hidden dimension that will project our input features to a smaller latent space so we can use those embeddings as features themselves. Here, we are attempting to perform:
+A. Dimension reduction  -- Answer
+B. Supervised learning
+C. Reinforcement Learning
+D. Regularization
+
+We call L1 and L2 regularization, respectively:
+A. Ridge and Lasso
+B. Norm and Binorm
+C. Lasso and Ridge-- Answer
+D. Least Squares and LOESS
+
+How can we use a pre-trained classifier (like VGG16) trained on an entirely different dataset relevantly in our custom classification problem?
+A. By copying the architecture are training it on our dataset just changing the input size
+B. By adding the dataset that model was trained on to ours and training it on their union.
+C. By using the weights of the convolution layers as feature mappings and adding our own fully connected network on top. -- Answer
+D. We shouldn't it's not really relevant.
+
+Which one of the following is not a viable data augmentation technique for images?
+A. Vertically flipping images.
+B. Rotating the images a random number of degrees.
+C. Fluctuate the RGB intensities of images.
+D. Remove certain images from our training set. -- Answer
+
+What architectural detail is different between n-gram and transformers which allowed the latter to perform better at placing words into context?
+A. Transformers throw away generic words like "the" and "it".
+B. Transformers don't form sequential word sequences, but take permutations of a sentence.-- Answer
+C. Transformers translate sentences into multiple languages to determine context.
+D. Transformers are more compact than certain n-grams.
+
+What is the nice thing you get from embeddings generated by word2vec which is useful for downstream tasks or as inputs to other classifiers?
+A. Certain words are joined together if they mean the same thing.
+B. A notion of similarity / distance in the output space the words are projected to.-- Answer
+C. The can't be used as features.
+D. They are much smaller dimensionally.
+
+
+I want to perform some (or a group of) operation(s) at the end of each training epoch with the tf.keras API. What part of the API allows me to register functions that will be executed after each epoch?
+A. tf.keras.optimizer
+B. tf.keras.loss
+C. tf.keras.callbacks <--
+D. tf.keras.functions
+
+Which dynamic present in neural network architecture was addressed by batch normalization?
+A. The exploding gradient problem.
+B. The class stratification problem.
+C. The shifting distribution of upstream layer's weights-- Answer
+D. The shifting distribuion of downstream layer's weights
+
+GANs were motivated by which of the following concepts / algorithms from Game Theory
+A. Minimax -- Answer
+B. Nash's algorithm
+C. Goodman's algorithm
+D. Expectimax
+
+If we want to perform style transfer of an image of a dog into the style of a Van Gogh painted, what we call the image of the dog (if the Van Gogh painting is the style reference)?
+A. The latent image.
+B. The reference image.
+C. The base image.
+D. The content image.-- Answer
+
+A Markov chain / process has this particular property with respect that relates P(Xt+1 | Xt) and P(Xt+1 | Xt-1) if our current state is t:
+A. The state of the system at t-1 is irrelevant at t w.r.t probability of t+1 -- Answer
+B. It is monotonically increasing as a function of $t$
+C. It says that we can no longer return to the state of the system at t-1 from t+1
+D. It is saturating
+
+In board games engines (e.g. chess or Go) we have to determine the value of a particular board by treating it as an
+A. Optimization problem
+B. Search problem ---- Answer
+C. Intractable problem
+D. Gradient descent problem
+=================================================Stephanie ============================
+
+Which regularization technique is best used for deep learning to reduce overfitting?
+a) Dropout ---- Answer
+b) Ridge Regression
+c) Lasso Regression
+d) Hyperparameter tuning
+
+Which of the following is not a commonly used evaluation metric for a classification problem?
+a) accuracy
+b) precision
+c) recall
+d) MSE ---- Answer
+
+Which does NOT describe overfitting?
+a) high model complexity, low training error, high test error
+b) low bias, high variance
+c) low model complexity, high training error, high test error---- Answer
+d) occurs when an algorithm fits too closely to a limited set of data
+
+In order to mitigate any potential impacts of multicollinearity, you should...
+a) drop features that aren't necessary
+b) create indicators for variables (ie., yes/no)
+c) eliminate redundant features ---- Answer
+d) convert categorical features to numeric
+
+Which is an unsupervised learning-based method of super-resolution?
+a) SRCNN
+b) ESPCNN
+c) SRResNET
+d) SRGAN ---- Answer
+
+Match the following image formats to their correct number of channels
+- Grayscale
+- RGB
+
+I. 1 channel
+II. 2 channels
+III. 3 channels
+IV. 4 channels
+
+a) Grayscale: 3, RGB: 1
+b) Grayscale: 2, RBG: 4
+c) Grayscale: 1, RGB: 3 ---- Answer
+d) Grayscale: 1, RGB: 2
+
+
+How many bi-gram phrases can be generated from the following sentence, after performing the following text cleaning steps:
+- stopword removal
+- replacing punctuations by a single space
+
+"Deep Neural Networks are cool!"
+a) one
+b) two
+c) three ---- Answer
+d) four
+solution: Deep Neural, Neural Networks, Networks cool
+
+Given an n-character word, we want to predict which character would be the n+1th character in the sequence. Which neural network architecture would be suitable to complete this task?
+a) Fully-connected neural network
+b) Recurrent Neural Network (RNN) ---- Answer
+c) Convolutional Neural Network (CNN)
+d) Deep neural network (DNN)
+
+The callback method of saving the current weights of the model at different points during training is called...
+a) model checkpointing ---- Answer
+b) early stopping
+c) dynamically adjusting the value of certain parameters during training
+d) logging training and validation metrics during training
+
+Which is NOT true about vanishing gradient problem in deep learning?
+a) the LSTM layer addresses the problem in recurrent networks
+b) residual connecions addresses the problem in feedforward deep networks
+c) occurs over very short sequences ---- Answer
+d) occurs when the feedback signla has to be propagated through a deep stack of layers
+
+A generative adversarial network is trained to generate a images with mini-batch gradient descent. The generator cost is very low, but does not generate meaningful output images. Why?
+a) The discriminator has poor performance ---- Answer
+b) The discriminator has high performance
+c) The generator is overfitting
+d) The optimizer is stuck in a saddle point
+
+Which is NOT true about the features of TensorBoard?
+a) visually monitor metrics during training
+b) visualize your model architecture
+c) visualize histograms of activations and gradients
+d) can only explore embeddings in 2D ---- Answer
+
+
+Which main approach for solving reinforcement learning problems involves the assumption that the full knowledge of environment dynamics is available?
+a) Dynamic programming (DP) ---- Answer
+b) Monte Carlo (MC) learning
+c) Temporal difference (TD) learning
+d) Off-policy:Q-learning
+
+Which reinforcement learning technique requires waiting until the end of the episode to be able to calculate the total return?
+a) Dynamic programming (DP)
+b) Monte Carlo (MC) learning ---- Answer
+c) Temporal difference (TD) learning
+d) Off-policy:Q-learning
+
+Which of the following is NOT true about Bag of Words (BOW)
+a) words can be n-grams
+b) information about order order or structure of words is kept---- Answer
+c) works relatively well on simple problems
+d) BOW and n-grams often used for shallow models
+
+=============================================================== sonali =======
+
+Why we do Data Cleaning is necessary?
+a) It prepares the data in the best way to allow mode to pick on underlying pattern that fit to
+b) Removes all the relevalent data
+c) It will not anonymize the data
+d) Numerical data are converted into categorical
+Ans a
+
+What function to be called to drop the column function
+a) Axis =1
+b) Axis= 0
+c) Axis = -1
+d) Map function
+Ans a
+
+3.How the data is not split
+a) Training dataset
+b) Testing dataset
+c) Validation dataset
+d) Functional dataset
+Ans d
+
+Which amoung is not used for evaluation metrics
+a) Accuracy
+b) Recall
+c) Precission
+d) Map
+Ans d
+
+When does overfitting occurs?
+a) When algorithm fits too closely to a limited set of data
+b) When algorithm is sensitivity to small fluctuations in training set
+c) When an algorithm cannot capture the underlying trend of the data
+d) Due to the high bias
+Ans a
+
+6.What is regularization?
+a) Reduce bias in the model
+b) Technique used to reduce overfitting by discouraging overly complex models
+c) Techniques for choosing hyperparameter for fitting the algorithm
+d) Configure the internal parameter of the model
+Ans b
+
+Arrange in order for building end to end machine learning pipeline
+ A.    Split data into train/validation/test
+ B.    Tune hyperparameters
+ C.    Fit an initial model and evaluate
+ D.    Evaluate on validation set
+ E.    Explore and clean the data
+a) D, A, C, B, E
+b) E, C, C, A, D
+c) E, B, A, C, D
+d) E, A, C, B, D
+Ans d
+
+Grid search is used to
+a) Reduce the overfitting
+b) Test the accuracy
+c) Find the optimal hyperparameter for the model
+d) Remove the missing data
+Ans c
+
+why does this simple convnet work so well, compared to a densely connected model?
+a) Dense layer learns from global pattern and convolution layer learns from local pattern of input feature
+b) Dense layer is complex
+c) Dense layer learns from local pattern and convolution layer learns from global pattern of input feature
+d) Dense layer uses both global and local patterns
+Ans a
+
+What exactly layers mean in CNN
+a) Layer is the volume of Neuron
+b) Layer with zero padding is called narrow convolution
+c) Single layer of neuron
+d) Layer are the controlling feature
+Ans a
+
+Which among them is not image localization approaches in CNN
+a) Regression problem
+b) Sliding windows
+c) Classification problem
+d) Linear method
+Ans d
+
+Technique which manipulate backpropagation ConvNets is called
+a) T-SNE style visualization
+b) Deep Dream
+c) Style transfer
+d) Deconvolution
+Ans b
+
+First method which uses CNN for super-convolution is
+a) DRCN
+b) ESPCNN
+c) SRCNN
+d) TCNN
+Ans C Super- Resolution CNN
+
+=====================================divya============================================
+1. The number of axis of a tensor is called
+a. dimensions
+b. rank
+c. shape
+d. attribute
+answer - b
+
+2. For which of the following is root mean squared error an appropriate loss function?
+a. Binary Classification
+b. Multi-class classification
+c. Regression
+d. Logistic regression
+answer – c
+
+3. Which of the following statements is true when you use 1×1 convolution in a CNN?
+a. Overfitting is less
+b. Can be used for feature pooling
+c. Helps in dimensionality reduction
+d. All of the above
+Answer - d
+
+4. Bag-of-words is more suitable for algorithms like
+a. 1D convnet
+b. CNN
+c. RNN
+d. Random forest
+Answer – d
+
+5. The input image has been converted into a matrix of size 28 X 28 and a kernel of size 7 X 7 with a stride of 1. What will be the size of the convoluted matrix?
+a. 14*14
+b. 22*22
+c. 21*21
+d. 7*7
+Answer – b
+
+6. Which of following activation function cannot  be used at output layer to classify an image?
+a. Sigmoid
+b. Tanh
+c. RELU
+d. None of the above
+Answer – c
+
+7. The vanishing gradient problem was addressed using
+a. LSTM
+b. ResNets
+c. RNN
+d. CNN
+	Answer – a
+
+8.  In which neural net architecture, does weight sharing occur?
+a. CNN and FCN
+b. FCN and RNN
+c. CNN and RNN
+d. None of the above
+Answer – c
+
+9. For a classification task, instead of random weight initializations in a neural network, we set all the weights to zero. Which of the following statements is true?
+a. The network will train as learn as usual
+b. The neural network will not train as there is no net gradient change
+c. The neural network will not train properly
+d. The neural network will train but all the neurons will end up recognizing the same thing
+Answer - d
+
+10. Which is the most suitable neural network architecture for image classification problem?
+a. RNN
+b. CNN
+c. Perceptron
+d. FCN
+Answer – b
+
+11. If calculation of reset gate in GRU unit is close to 0, which of the following would occur?
+a. Previous hidden state would be ignored
+b. Previous hidden state would be not be ignored
+c. Forgets the information for future time steps
+d. Copies the information through many time steps
+Answer - b
+
+12. Batch Normalization is helpful because
+a. Normalizes all the input before sending it to the next layer
+b. It is a very efficient backpropagation technique
+c. It returns back the normalized mean and standard deviation of weights
+d. Improves the speed of the network
+Answer - a
+==========================================Tony ===============================================
+Which of the following mechanism will help the neural network measure its performance and steer itself in the right direction?
+A. An optimizer
+B. Confusion matrix
+C. Forward propagation
+D. A loss function --answer
+
+When little training data is available, which of the following technique should you apply:
+A. Using a large network with many hidden layers
+B. Using a small network with few hidden layers --answer
+C. Don’t reserve data for validation
+D. Reserve a large portion of data for validation
+
+The issue of a simple Recurrent neural network with respect to learning long-term dependencies is similar to the issue of a:
+A. Complex recurrent neural network
+B. Shallow non-recurrent (feedforward) networks --answer
+C. Deep non-current (feedforward) networks
+D. Neural network with a Long Short-Term Memory layer
+
+Using surrounding words as a context to predict a missing word is a technique called:
+A. Skip gram
+B. Context encoding
+C. Bag of words
+D. Continuous bag of words --answer
+
+=============================================== sam tran ========
+Select the correct statement regarding dropout layer
+A - 0.3 dropout means 30 percents of the features are zeroed out. The units are also dropped at test time
+B - 0.3 dropout means 70 percents of the features are zeroed out. The units are also dropped at test time
+C - 0.3 dropout means 30 percents of the features are zeroed out. The units are not dropped at test time -- answer
+D - 0.3 dropout means 70 percents of the features are zeroed out. The units are not dropped at test time
+
+Select the correct statement regarding L1 and L2 regularizations. The cost added is proportional to the:
+A - L1: Mininmal value of the all weights, L2: absolute value of the weight coefficients
+B - L1: Absolute value of the weight coefficients. L2: square of the value of the weight coefficients-- answer
+C - L1: Square of the value of the weight coefficients. L2: Absolute value of the weight coefficients
+D - L1: Absolute value of the weight coefficients. L2: square root of the value of the weight coefficients
+
+
+What is the purpose of the max-pooling operation
+A - Aggressively downsample feature maps-- answer
+B - Agressively upsample feature maps
+C - Agressively resample feature maps
+D - Agressively filter feature maps
+
+For a 5 x 5 window with a 4 x 4 patch, how many rows and column should be added on each side of the input feature map so as to make it possible to fit center convolution windows around every input tile?
+A - 1
+B - 2-- answer
+C - 3
+D - 4
+
+Which of the following does not belong to a bag-of-2-grams set?
+A - "supercaliflawjalisticexpialadoshus"
+B - "the dog"
+C - "barks supercalifragilisticexpialidocious"
+D - "at the wall" -- answer
+
+Why on earth do you want to stack recurrent layers?
+A - I am overfitting. I need to resolve it.
+B - I am not overfitting, but my accuracy is not improving. -- answer
+C - I have too many layers, so my gradients are vanishing.
+D - It seems to improve my validation accuracy, even though it is "slightly" overfitting
+
+What should you do when you try to ensemble models?
+A - as many as possible while being as similar as possible
+B - as many as possible while being as different as possible
+C - as good as possible while being as similar as possible
+D - as good as possible while being as different as possible- - answer
+
+Where shouldn't you put your batch normalization?
+A - before a dropout layer
+B - after a dropout layer -- answer
+C - before a conv layer
+D - after a conv layer
+
+In training and tunning GAN, what is the type of distribution using to sample points from the latent space?
+A - binormal distribution
+B - Poisson distribution
+C - uniform distribution
+D - normal distribution -- answer
+
+What doesn't a variational encoder do?
+A - compress its input image into a fixed code in the latent space using based on a statistical distribution -- answer
+B - turn image into the parameters of a statistical distribution
+C - Randomly sample one element of the distribution
+D - Decode a randomly chosen element from the distribution to the original input
+
+Which of the statements is incorrect regarding "policy"?
+A - Determines the next action to take
+B - Can't be changed during the learning process -- answer
+C - Start from random policy, where the probability of actions is uniform
+D - Optimal policy yields the highest return
+
+What problem does epsilon-greedy policy try to solve?
+A - Too much exploration
+B - Not visiting non-optimial state-action pairs -- answer
+C - All state-action pairs are being considered equally
+D - Too focus on maximizing long term reward
+
+
+What is not the problem with deep learning?
+A - Can be used in adversatial attacks
+B - Can generate non-existing people for medical researches -- answer
+C - The ways it works are not similar to how human think
+D - Fake famous people to cause chaos
+
+
+===========================================================Brek ====
+
+Q1) Which type of data can not be shuffled without risk of poisen ?
+a) Image Data
+b) Video Data
+c) Time Series --answer
+d) Audio Data
+
+Q3) By visualizing activations of a CNN based NN, we can understand their working principles. Which one of the following statements about layer activations are wrong about changes that happens going from down layer of CNN based NN to top layer of the network ?
+A) The first layer acts as a collection of various edge detectors.
+B) As you go higher, the activations become increasingly abstract and less visually interpretable.
+C) The sparsity of the activations increases with the depth of the layer.
+D) Layers becomes less suitable for using with transfer-learning. --
+
+Q4) Which one is not an meaningful way of visualizing CNNs ?
+A) Visualizing intermediate convnet outputs (intermediate activations)
+B) Visualizing convnets filters
+C) Visualizing heatmaps of class predictions of each layer given an image ----
+D) Visualizing heatmaps of class activation in an image
+
+Q5) What is advantage of using Bidirectional RNNs over vanilla RNNs ?
+A) Computationally efficient.
+B) Easier to understand and implement.
+C) Takes advantage of direction to catch more patterns. ---
+D) Can process videos by exploiting order of images.
+
+Q6) Which one of the following is not an improvement of RNNs over fully-connected networks ?
+A) Keeping track of patterns in sequence data
+B) Working with varying size input
+C) Modeling temporal ordering
+D) Ability to process text data   ---
+
+Q7) Which one of the followings makes a language model sound less like a human ?
+A) Adding more text to training data
+B) Training for more epochs
+C) Increaseing temperature variable ----
+D) Increasing number of layers
+
+Q8) Which is the more important for using a NNs to achieve any task ?
+A) Desining a new building block such as CNN or LSTM for the task
+B) Changing parameters of the NNs
+C) Designing a loss function that captures essence of the task ---
+D) Generating more data
+
+Q9) Which one defines discriminator network of a GAN best ?
+A) Generates synthetic images given random vector
+B) Generates image embeddings
+C) Predicts if a given image real or syntetic ---
+D) Learns representation with self-supervised learning
+
+Q10) Which one is an advantage of VAEs over GANs ?
+A) Learning well-structured latent spaces. --
+B) Good for generating faces
+C) Data compression
+D) Detecting syntetic images
+
+From lecture Slides
+Q11) Which one is not a gate on the LSTM module?
+A) Forget gate
+B) Output gate
+C) Input modulation gate
+D) Memory gate --
+
+Q12) Which one of the building blocks does not exists in the BERT?
+A) Attention
+B) Normalization
+C) Feed-forward
+D) CNNs  ---

@@ -1,0 +1,380 @@
+******************************************************************************************
+**********************************   Enter QUIT to exit    *******************************
+******************************************************************************************
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: C->D
+FD: C->A
+FD: B->C
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	C->D
+	C->A
+	B->C
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: A
+{A}+ = A
+Seed: B
+{B}+ = ABCD
+Seed: C
+{C}+ = ACD
+Seed: D
+{D}+ = D
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	B	
+NF of Relation:	2NF
+
+NF of FDs:
+	C->D : 2NF
+	C->A : 2NF
+	B->C : BCNF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: B->C
+FD: D->A
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	B->C
+	D->A
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: B
+{B}+ = BC
+Seed: BD
+{BD}+ = ABCD
+Seed: D
+{D}+ = AD
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	BD	
+NF of Relation:	1NF
+
+NF of FDs:
+	B->C : 1NF
+	D->A : 1NF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: ABC->D
+FD: D->A
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	ABC->D
+	D->A
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: ABC
+{ABC}+ = ABCD
+Seed: D
+{D}+ = AD
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	ABC	BCD	
+NF of Relation:	3NF
+
+NF of FDs:
+	ABC->D : BCNF
+	D->A : 3NF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: A->B
+FD: BC->D
+FD: A->C
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	A->B
+	BC->D
+	A->C
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: A
+{A}+ = ABCD
+Seed: B
+{B}+ = B
+Seed: C
+{C}+ = C
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	A	
+NF of Relation:	2NF
+
+NF of FDs:
+	A->B : BCNF
+	BC->D : 2NF
+	A->C : BCNF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: AB->C
+FD: AB->D
+FD: C->A
+FD: D->B
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	AB->C
+	AB->D
+	C->A
+	D->B
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: AB->C
+FD: AB->D
+FD: C->A
+FD: D->B
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	AB->C
+	AB->D
+	C->A
+	D->B
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: !
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: AB
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: AB
+{AB}+ = ABCD
+Seed: BC
+{BC}+ = ABCD
+Seed: CD
+{CD}+ = ABCD
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	AB	BC	AD	CD	
+NF of Relation:	3NF
+
+NF of FDs:
+	AB->C : BCNF
+	AB->D : BCNF
+	C->A : 3NF
+	D->B : 3NF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: QUIT
+You entered QUIT to exit the application
+
+------------------------------------
+
+******************************************************************************************
+**********************************   Enter QUIT to exit    *******************************
+******************************************************************************************
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABC
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: A->AB
+FD: A->X
+
+ Wrong FD[RHS contains attributes not in Relation].
+FD: A->B
+FD: A->B
+FD: B->C
+FD: AB->C
+FD: #
+You entered relation and FDs:
+	R(ABC)
+	A->AB
+	A->B
+	B->C
+	AB->C
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: A
+{A}+ = ABC
+Seed: B
+{B}+ = BC
+Seed: V
+Wrong Seed. Seed is not Contain in Relation's attributes
+
+Seed: C
+{C}+ = C
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	A	
+NF of Relation:	2NF
+
+NF of FDs:
+	A->AB : BCNF
+	A->B : BCNF
+	B->C : 2NF
+	AB->C : BCNF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: ABCD
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #   
+Enter Relation's Attributes(In Uppercase): ABCD
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: AB->C
+FD: C->B
+FD: AB->A
+
+Wrong FD[RHS of FD is subset of LHS].
+FD: #
+You entered relation and FDs:
+	R(ABCD)
+	AB->C
+	C->B
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: AB
+{AB}+ = ABC
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	ABD	ACD	
+NF of Relation:	3NF
+
+NF of FDs:
+	AB->C : 3NF
+	C->B : 3NF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): ABC
+>>>>Enter FDs in format X->Y. Enter # to finish entering FD<<<<
+
+FD: A->B
+FD: B->C
+FD: C->A
+FD: #
+You entered relation and FDs:
+	R(ABC)
+	A->B
+	B->C
+	C->A
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 1
+Enter seed or # for back menu
+Seed: A
+{A}+ = ABC
+Seed: #
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: 2
+
+	Keys:	A	B	C	
+NF of Relation:	BCNF
+
+NF of FDs:
+	A->B : BCNF
+	B->C : BCNF
+	C->A : BCNF
+
+Enter 1: to find closures
+      2: to find keys and NF
+      #: to start with new relation and FDs
+Option: #
+Enter Relation's Attributes(In Uppercase): QUIT
+You entered QUIT to exit the application
+ayub@ayubs-MacBook-Pro executable (master) $ 

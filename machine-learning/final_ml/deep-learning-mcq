@@ -1,0 +1,112 @@
+Q. Which of the following is not an example of real world data tensor>
+A. Vector data— 2D tensors of shape
+B. Timeseries data or sequence data— 2D tensors of shape
+C. Images— 4D tensors of shape
+D. Video— 5D tensors of shape
+Answer:B
+
+Q. Which of the following is not true about nural networks
+A. Learning means finding a combination of model parameters that minimizes a loss function
+B. The loss is the quantity you’ll attempt to minimize during training
+C. The optimizer specifies the exact way in which the gradient of the loss will be used to update parameters
+D. Gradient is used in initialize model.
+Answer:D
+
+Q. A sequence data stored in 3D tensors(samples, timesteps, features) is typically processed by
+A. Dense layer
+B. Recurrent layers
+C. 2D Conv
+D. 3D Conv
+Answer: B
+
+Q. Which of the following is not a activation function?
+A. ReLu
+B. Sigmoid
+C. Elu
+D. Sine
+Answer: D
+
+Q. We want final layer output as a probability which of the following activation we may use?
+A. ReLu
+B. Sigmoid
+C. Elu
+D. Tanh
+Answer: B
+
+Q. In Binary Classification problem. Network should end with
+A. A Dense layer with one unit and sigmoid activation
+B. A Dense layer with two unit and sigmoid activation
+C. A Dense layer with two unit and relu activation
+D. A Dense layer with one unit and softmax activation
+Answer: A
+
+Q. Which of the following is not true for MultiClass Classification?
+A. To Classify N Classes, Network should end with a Dense of size N
+B. Network should end with softmax activation
+C. Network should end with sigmoid activation
+D. To classify large number of categories, Network should void create information
+bottlenecks due to intermediate layers is too small
+Answer: C
+
+Q. Which of the following is not true.
+A. Optimization refers to the process of getting the best performance possible on the training data
+B. Generalization refers to how well the trained model performs on data it has never seen before
+C. The simplest way to prevent overfitting is to increase the size of the model
+D. The processing of fighting overfitting this way is called regularization
+Answer: C
+
+Q. Which of the following is not a regularization technique?
+A. L1 regularization
+B. SGD regularization
+C. L2 regularization
+D. Dropout
+Answer:B
+
+Q. which is not example of pretained mode?
+A. ResNet
+B. VGG
+C. Inception
+D. ImageNet
+Answer: D
+
+Q. Pretained models are part of ----- ?
+A. keras.applications
+B. Sklearn.applications
+C. ImageNet.applications
+D. MobiNet.applications
+Answer:A
+
+Q. The algorithm for sequence processing is
+A. CNN
+B. VGG16
+C. RNN
+D. InceptionNet
+Answer: C
+
+Q. In order to solve problem of Vanishing gradient we used
+A. RNN
+B. LSTM
+C. DNN
+D. CNN
+Answer: B
+
+Q. What is GloVe?
+A. A RNN pretained model
+B. A CNN pretained models
+C. A word embedding technique
+D. A character embedding technique
+Answer: C
+
+Q. Which of the following is not RNN?
+A. SimpleRNN
+B. GAN
+C. LSTM
+D. GRU
+Answer: B
+
+Q. Question-answering model is an example of
+A. Multi-input model
+B. Multi-output model
+C. Single-input model
+D. Sinle-output model
+Answer: A

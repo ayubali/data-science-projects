@@ -1,0 +1,187 @@
+Q1. A clustering results in labels against unlabeled data, it is referred to
+A. predictive partitioning
+B. supervised labeling
+C. predictive labeling
+D. unsupervised classification
+Answer: D
+
+Q2. Which of the following is not method of clustering
+A. Nearest neighbor
+B. Centroid clustering
+C. Median clustering
+D. Quard clustering
+Answer: D
+
+Q3. Which of the following algorithm does not care feature scaling?
+A. KNN
+B. SVM
+C. Logistic Regression
+D. Random Forest
+Answer: D
+
+Q4. Which is not a solutions to reduce the generalization error?
+A. Collect more test data
+B. Introduce a penalty for complexity via regularization
+C. Choose a simpler model with fewer parameters
+D. Reduce the dimensionality of the data
+Answer: A
+
+Q5. Which of the following is a algorithm based on the idea of bagging?
+A. Decision Tree
+B. Regression
+C. Classification
+D. Random Forest
+Answer: D
+
+Q6. which of the following is the correct way to preprocess the data in performing regression or classification?
+A. Normalize the data → PCA → training
+B. PCA → normalize PCA output → training
+C. Normalize the data → PCA → normalize PCA output → training
+D. None of the above
+Answer: A
+
+Q7. Which distance measure method used by k-means clustering?
+A. Euclidean
+B. Centroid
+C. Manhattan
+D. Cluster
+Answer: A
+
+Q8. Which of the following is a regression problem?
+A. Can I determine a person's income based on their age and type of job?
+B. Which states have the highest infant mortality rate?
+C. How can I group supermarket products using purchase frequency?
+D. Identify similarities in shopping patterns between customers of a department
+Answer: A
+
+Q9. Which of the following model is not an example of ensemble learning?
+A) Random Forest
+B) Adaboost
+C) Gradient Boosting
+D) Decision Trees
+Answer: D
+
+Q10. What is not an example of an activation function?
+A. ReLu
+B. Sigmoid
+C. tanh
+D. GINI
+Answer: D
+
+Q11. How to select best hyperparameters in tree based models?
+A) Measure performance over training data
+B) Measure performance over validation data
+C) Both of these
+D) None of these
+Answer: B
+
+Q12. Which of the following is not true about boosting trees?
+A. In boosting trees, individual weak learners are independent of each other
+B. It is the method for improving the performance by aggregating the results of weak learners
+C. the main reason for having weak learners to prevent overfitting
+D. the main reason for having weak learners to prevent underfitting
+Answer: D
+
+Q13.  Which of the following is an example of a deterministic algorithm?
+A) PCA
+B) K-Means
+C) None of the above
+Answer: (A)
+
+Q14.  Which of the following statement(s) is / are true for Gradient Decent (GD) and Stochastic Gradient Decent (SGD)?
+A. In GD and SGD, you update a set of parameters in an iterative manner to minimize the error function.
+B. In SGD, you have to run through all the samples in your training set for a single update of a parameter in each iteration.
+C. In GD, you either use the entire data or a subset of training data to update a parameter in each iteration.
+D. In GD and SGD you update a set of parameters in an selective manner to minimize the error function.
+Answer: A
+
+Q15. What is pca.components_?
+A. Eigen vectors for the projection space
+B. Matrix of PCA components
+C. Result of the multiplication matrix
+D. None of the above options
+Answer: A
+
+Q16. Which of the following is one of the important step(s) to preprocess the text in NLP?
+A. Stemming
+B. Stop word removal
+C. Object Standardization
+D. all of above
+Answer: D
+
+Q17. Consider your majority class has 99% of train data. and your model report 99% accuracy on your
+training data. then which of the following True
+A. Accuracy score is not a good idea for imbalance dataset.
+B. Accuracy score is good idea for imbalance dataset.
+C. Precision and recall scores are good for imbalance dataset.
+D. Precision and recall scores are not good for imbalance dataset.
+Answer:A
+
+Q18. Which of the following is not related to feature selection?
+A. K-means
+B. Recursive Feature Elimination
+C. Principal Component Analysis
+D. Feature Importance
+Answer:A
+
+Q19. Which of the following corss-validation is recommended for small dataset?
+A. Holdout cross-validation
+B. 10-fold cross-validation
+C. Leave-one-out cross-validation (LOOCV)
+D. 5-fold cross-validation
+Answer: C
+
+Q20. What kind of Cross-validation is recommended for unbalaced dataset
+A. Holdout cross-validation
+B. Leave-one-out cross-validation (LOOCV)
+C. StratifiedKFold
+D. K-fold
+Answer: C
+
+Q21. Which of the following is not involved in data mining?
+A. knowledge extraction
+B. Data archaeology
+C. Data Exploration
+D. Data Transforms
+Answer: D
+
+Q22. Which is not a Vectorization method used in Sentiment analysis
+A. CountVectorizer
+B. TfidfVectorizer
+C. MeanVectorizer
+D. HashingVectorizer
+Answer: C
+
+Q23. Why we use RANSACRegressor?
+A. Throwing out outliers
+B. Minimizing overfitting
+C. Minimizing underfitting
+D. Regularization
+Answer: A
+
+Q24. which of the following is not a regularization method for linear regression?
+A. Ridge
+B. LASSO
+C. Gradient boasting
+D. Elastic Net
+Answer: C
+
+Q25. Which of the clustering algorithm capable of handling outlier and Identify mon-globular shapes?
+A. K-means
+B. DBSCAN
+C. Agglomerative
+D. K-mean++
+Answer: B
+
+Q26. Which is false about CNN
+A. Slow
+B. Fast and Realtime
+C. Pseudo-biological in basis
+D. Human-like abilities
+Answer: B
+
+Q27. TensorFlow is a --- library
+A. Deep Learning
+B. Image Processing
+C. Text Processing
+D. Clustering library

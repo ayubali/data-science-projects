@@ -1,0 +1,57 @@
+1.  Python’s general purpose built-in containers, dict, list, set, and tuple.
+  A) True
+  B) False
+
+Answer: A
+Explanation: dict, list, set, and tuple are general purpose containers
+
+2. What will be the output?
+  d = {"john":40, "peter":45}
+  "john" in d
+
+  A) True
+  B) False
+
+Answer: A
+Explanation: python dict support in
+
+3. The output of the following snippet of code is either 1 or 2. State whether this statement is true or false.
+
+  import random
+  random.randint(1,2)
+
+  A) True
+  B) False
+
+  Answer: A
+  Explanation: The function random.randint(a,b) helps us to generate an integer between ‘a’ and ‘b’, including ‘a’ and ‘b’. In this case, since there are no integers between 1 and 2 , the output will necessarily be either 1 or 2’.
+
+4. There are two types of data structures in pandas: Series and DataFrames
+  A) True
+  B) False
+
+  Answer: A
+  Explanation: Series and DataFrames are the two types of data structures in pandas. Series is a one dimensional data structur. DataFrame is a two (or more) dimensional data structure – basically a table with rows and columns.
+
+
+  5. Support Vector Machines (SVM) is classification algorithm
+    A) True
+    B) false
+
+  Answer: A
+  Explanation: “Support Vector Machine” (SVM) is a supervised machine learning algorithm which can be used for both classification or regression challenges
+
+
+  6. mutate function is used for casting as multi dimensional arrays.
+    A) True
+    B) False
+
+  Answer: B
+  Explanation: mutate is used for adding new variables.
+
+  7. PCA is most useful for non linear type models.
+    A) True
+    B) False
+
+  Answer: B
+  Explanation: PCA is most useful for linear type models.

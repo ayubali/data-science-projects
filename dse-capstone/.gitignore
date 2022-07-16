@@ -1,0 +1,8 @@
+*.pyc
+*.o
+~*
+*/.ipynb_checkpoints/*
+*/.DS_Store/*
+experimental-notebooks/Classifiers/.ipynb_checkpoints/*
+experimental-notebooks/.ipynb_checkpoints/*
+datasets/.DS_Store/*

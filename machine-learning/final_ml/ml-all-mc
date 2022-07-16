@@ -1,0 +1,2305 @@
+==== marzan ====================================
+Chapter
+1.In which kind of machine learning, the goal is to develop a system(agent) that improves its performance based on interactions with the environment?
+a. Supervised learning
+b. Unsupervised learning
+c. Reinforcement learning
+d. a & b
+Answer: c
+
+ 2. which one is not a part of preprocessing of the data?
+a. Feature extraction and scaling
+b. Feature selection
+c. Dimensionality reduction
+d. Cross validation
+Answer: d
+
+Chapter 2
+3. The convergence of the perceptron is only guaranteed if?
+a. If the two classes are linearly separable and the learning rate is small
+b. If the two classes are not linearly separable and the learning rate is small
+c. If the two classes are linearly separable and the learning rate is big
+d. If the two classes are not linearly separable and the learning rate is big
+Answer: a
+
+4. How can we minimize the cost function in an algorithm?
+a. Update the weights
+b. gradient descent
+c. feature scaling
+d. minimize iterations
+     Answer: b
+
+Chapter 3
+5. One way of finding a good bias variance tradeoff is:
+a. Decreasing weights
+b. Maximize the log-likelihood
+c. Regularization
+d. Filter out noise from data
+      Answer: c
+
+6. How can we maximize the margin?
+a. By support vector machines
+b. By logistic regression
+c. By perceptron
+d. By decision tree
+            Answer: a
+
+Chapter 4
+7.Which one is not a kind of feature?
+a. Numerical
+b. Map
+c. Nominal
+d. Ordinal
+        Answer: b
+
+8.Which one is not an approach to bring features to onto the same scale?
+a. Normalization
+b. Standardization
+c. Regularization
+d. Optimization
+      Answer: d
+
+Chapter 5
+9. What is the difference between feature selection and feature extraction?
+a. We maintain the original features when we use feature selection, but we use feature extraction to transform the data onto a new feature space
+b. We maintain the original features when we use feature extraction, but we use feature selection to transform the data onto a new feature space
+c. We reduce the original features when we use feature selection, but we use feature extraction to maintain the original data
+d. We maintain the original features when we use feature extraction, but we use feature extraction to reduce the original data
+     Answer: a
+
+ 10. What is the difference between PCA and LDA?
+a. PCA is a supervised learning, whereas LDA is a technique for unsupervised dimensionality reduction
+b. PCA is an unsupervised learning, whereas LDA is a technique for supervised dimensionality reduction
+c. LDA is linear discriminant analysis, whereas PCA is not linear.
+d. PCA is an unsupervised learning, whereas LDA is a technique for supervised dimensionality reduction
+   Answer: d
+
+ Chapter 6
+
+11. Which tool can not help us improve the performance of a learning algorithm?
+a. Learning curves
+b. Validation curves
+c. Visualization
+d. Grid search
+ Answer: c
+
+12. Which one in not a performance metrics?
+a. Learning rate
+b. Precision
+c. Recall
+d. F1-score
+      Answer: a
+
+Chapter 7
+13. Which classifier is a special case of bagging?
+a. Logistic regression
+b. Knn
+c. Svm
+D. Random forest
+       Answer: d
+
+14. Which one is not a technique for ensemble learning?
+a. Majority vote classifier
+b. Svm classifier
+c. Bagging classifier
+d. Adaboost classifier
+           Answer: b
+
+Chapter 8
+15. Which one is a popular technique for topic modeling?
+a. Linear discriminant analysis
+b. Majority vote classifier
+c. Latent Dirichlet allocation(LDA)
+d. Sentiment analysis
+                  Answer: c
+
+16. What does word stemming do in processing documents?
+a. Transforms a word into its roof form
+b. Removes stop words
+c. Reads in a document
+d. Returns a document
+       Answer: a
+
+ Chapter 10
+
+17. Which algorithm fits a regression model to a subset of the data reducing the effect of the outliers in the dataset?
+a. Linear discriminant analysis
+b. Sentiment analysis
+c. Linear regression
+d. Random sample consensus
+      Answer: d
+
+18. Which one is not an approach to regularized linear regression?
+a. Ridge regression
+b. Least absolute shrinkage and selection operator
+c. Latent Dirichlet allocation
+d. Elastic net
+  Answer: c
+
+Chapter 11
+
+19. Which one is not a category of clustering?
+a. Knn
+b. K-means
+c. Hierarchical
+d. Density-based
+  Answer: a
+
+20. What is the difference between Hard and Soft clustering?
+a. Hard clustering assigns a sample to one or more clusters, but Soft clustering assigns a sample to exactly one cluster
+b. Hard clustering assigns a sample to exactly one cluster, but Soft clustering assigns a sample to one or more clusters
+c. Hard clustering is known as a k-means clustering, but Soft clustering is a kind of density-based.
+d. Hard clustering is known as a density-based clustering, but Soft clustering is a kind of k-means.
+          Answer: b
+
+Chapter 12
+21. Why we usually add a regularization term in a neural network?
+a. To reduce the degree of overfitting
+b. To increase the accuracy
+c. To control the model
+d. To remove outliers
+
+           Answer: a
+
+22. What is the problem of applying the chain rule in the forward mode of automatic differentiation?
+a. Being complicated
+b. Taking too long
+c. Doing randomly
+d. Being expensive
+            Answer: d
+============================================= Zhiqiang Wang==========================================================
+
+
+Chap 1
+
+
+Which of the following does not belong to the preprocessing part of predictive modeling workflow?
+a. Feature selection
+b. Dimensionality reduction
+c. Feature extraction and scaling
+d. Model selection <-answer
+
+Which of the following does not belong to the learning part of predictive modeling workflow?
+a. Cross-validation
+b. Performance Metrics
+c. Hyperparameter Optimization
+d. Sampling <-answer
+Chap 2
+
+Which of the following is a gradient descent algorithm?
+a. Adaptive gradient descent <-answer
+b. Stochastic gradient descent
+c. Batch gradient descent
+d. Mini-batch gradient descent
+
+The learning rate is
+a. A constant between -∞ and ∞
+b. A constant between 0.0 and 1.0 <-answer
+c. A constant between -1.0 and 1.0
+d. A constant between 0.0 and ∞
+
+Chap 3
+Which of the following is not a part of five main steps in training a supervised machine learning algorithm?
+a. Selecting features and collecting unlabeled training examples <-answer
+b. Evaluating the performance of the model
+c. Choosing a performance metric
+d. Tuning the algorithm
+
+____ is a lazy learning algorithm
+a KNN <-answer
+b. SVM
+c. Random Forest
+d. Naive Bayes
+
+Chap 4
+
+Which of the following statements is not correct about robustScaler?
+a. Centering and scaling happen independently on each feature
+b. Removes the median value and scales 25th and 75th quantitle of the dataset
+c. Useful when working with small datasets that contain many outliers
+d. Can be a good choice when the dataset is prone to underfitting <-answer
+
+Which of the following is not a common solution to reduce the generalization error?
+a. Collecting less training data <-answer
+b. Choose a simpler model with fewer parameter
+c. Reduce the dimensionality of the data
+d. Introduce a penalty for complexity via regularization
+
+Chap 5
+Which of the following statements is not correct?
+a. PCA is a linear, unsupervised dimensionality reduction technique
+b. LDA is used for maximizing class separability
+c. LDA is a linear, supervised dimensionality reduction technique
+b KPCA is a linear, unsupervised dimensionality reduction technique <-answer
+
+Which of the following is not a step of a PCA?
+a. Obtaining the eigenvalues and eigenvectors of the covariance matrix
+b. Sorting the eigenvalues by increasing order to rank the eigenvectors <-answer
+c. Constructing the covariance matrix
+d. Standardizing the data
+
+Chap 6
+Model underfitting can be reduced by:
+a. Using cross validation
+b. Increasing the complexity of the model <-answer
+c. Choosing a simpler model with fewer parameters
+d. Collecting more training data
+
+How many folds are used for model training in k-fold cross-validation?
+
+a. K
+b. K/N
+b. K+1
+c. K-1 <-answer
+
+Chap 7
+
+Which of the following is not true about majority voting?
+a. It cannot be used to binary class settings <-answer
+b. selected label should receive more than 50 percent of the votes
+c. It can be generalized to multiclass setting
+d. select the class label that has been predicted by the majority of classifiers
+
+Which of the following is not wise to do?
+a. ensemble different classification algorithms with same training set
+b. ensemble different classification algorithms with different training set
+c. ensemble same classification algorithms with different training set
+d. ensemble same classification algorithms with same training set <-answer
+
+Chap 8
+
+______: used to downweight frequently occurring words in feature vectors
+a. term frequency-inverse document frequency <-answer
+b. Word stemming
+c. tokenizer
+d. raw term frequencies
+
+Th 2-gram representations of "the sun is shining" would be constructed as:
+a. "The sun is", "is shining"
+b. "the sun", "sun is", "is shining" <-answer
+c. "the", "sun", "is", "shining"
+d. "the", "the sun is ", "is", "is shining"
+
+Chap 10
+
+Which of the following is not a part of the iterative RANSAC algorithm?
+a. Select a random number of examples to be inliers and fit the model
+b. Test all other data points against the fitted model and add those points that fall within a user-given tolerance to the inliers.
+c. refit the model using all inliers.
+d. Estimate the error of the unfitted model versus the inliers. <-answer
+
+Regression algorithm that deals well with eliminating outliers
+a. Linear regressor
+b. Elastic Net
+d. Ridge regressor
+c. RANSACRegressor <-answer
+
+Chap 11
+
+The k-means algorithm belongs to the category of
+a. Prototype-based clustering <-answer
+d. Distribution Model-Based Clustering
+c. Hierarchical clustering
+d. Density-based clustering
+
+In Density-based clustering, all other points that are neither ___ nor ____ points are considered ____
+a. inner; noise; core points
+b. core; inner; border points
+c. core; noise; border points
+d. core; border; noise points <-answer
+
+
+Chap 12
+Backpropagation is an algorithm used to train neural networks by
+a. Balancing bias and variance
+b. Reducing the weights during each epoch
+c. Minimizing the sum of squared errors
+d. Updating the weights by calculating the partial derivative of the error with respect to a weight <-answer
+
+Which of the following is not a step of multilayer perceptron (MLP) learning procedure?
+a. Starting at the input layer, we forward propagate the patterns of the training data through the network to generate an output.
+b. calculate the error that we want to minimize using a cost function that we will describe later based on the network's output
+c. backpropagate the error, find its derivative with respect to each weight in the network, and update the model
+d.calculate the network output and apply a threshold function to obtain the predicted class labels in the one-hot representation<-answer
+
+SIngle-layer perceptron cannot be implemented by
+a. AND Gate
+b. XOR Gate <-answer
+c. NOT Gate
+d. OR Gate
+
+Which of the following is not an advantage of collaborative filtering?
+a. make recommendations based on existing interests of the user <-answer
+b. the system doesn't need contextual features
+c. help users discover new interests
+d. No domain knowledge necessary
+
+Which of the following is a task/framework in Data mining but not in machine learning?
+a. Dimension reduction <-answer
+b. Finding periods
+c. Finding trends, deviation of trends
+d. Similarity and Network Analysis
+
+Which of the following is correct?
+a. Gradient: direction of fastest decrease in error
+b. Gradient: direction of fastest increase in error <-answer
+c. Negative Gradient: direction of fastest increase in error
+d. Negative Gradient: direction of slowest no change in error
+
+Which of the following is not a type of clustering?
+a. Associative <-answer
+b. Fuzzy
+c. Partition
+d. Bi-partite
+
+Bagging and Boosting are not similar in that they are both
+a. ensemble techniques
+d. use N learners in the training stage
+c. sampling with replacement
+d.  Use weighted average <-answer
+
+Which of the following is not a part of a sklearn pipeline?
+a. scaling
+b. dimensionality
+c. Learning algorithms
+d. Data cleaning <-answer
+
+Which of the following is the correct order?
+a. normalizing/standardizing, split train-validate-test, ML training, evaluation
+b. Feature selection/extraction, split train-validate-test, ML training, evaluation
+c. split train-validate-test, hyper parameter selection, ML training, evaluation
+d. split train-validate-test, ML training, hyper parameter selection, evaluation <-answer
+
+Which of the following is not a good idea when imputing data?
+a. Use simpleImputer from sklearn
+c. Fill with mean
+c. Fill with mode
+d. Fill with range <-answer
+
+
+Which of the following is not correct about KNN?
+a. Pro: (Almost) no parameters
+b. Pro: (Can be very accurate if lots of data and lower dimension
+c. Con: slow on lots of data
+d. Pro: High dim needs feature selection to work <-answer
+
+Underfitting is _____ and overfitting is _______
+
+
+a. low bias & high variance; low bias & high variance
+b. high bias & low variance; low bias & high variance <-answer
+C. low bias & high variance; high bias & low variance
+d. high bias & low variance; high bias & low variance
+
+===================================== Tova Schwartz ===============================================
+
+
+1. Which is not one of the three types of machine learning?
+a. guided learning >> answer
+b. supervised learning
+c. reinforcement learning
+d. unsupervised learning
+-
+
+2. What is the goal of reinforcement learning?
+a. to find hidden structural patterns in the data
+b. to develop a system that improves based on interactions with the environment >> answer
+c. to estimate the regression towards the mean
+d. to predict an outcome by training on data with know target values
+-
+3. What happens when the perceptron predicts a correct label?
+a. it updates the weights
+b. it adjusts for bias
+c. nothing changes >> answer
+d. it updates the weights based on learning rate
+-
+4. What is the key difference between adaline and perceptron?
+a.  the use of backpropogation to update weights
+b. the implementation of a learning rate
+c. the use of gradient descent
+d. the activation function >> answer
+-
+5. What is the no free lunch theorem?
+a. no single classifier works best in all scenarios >> answer
+b. the trade off between test score and train score
+c. the larger the range used in grid search the more resources it will use
+d. a neural network with enough nodes can fit to any data
+-
+6. What type of machine learning algorithm is logistic regression
+a. linear regression
+b. classification >> answer
+c. clustering
+d. SVM
+-
+7. What is a valid way to deal with with categorical data?
+a. drop categorical data columns
+b. replace with numeric value of choice
+c. convert using onehot encoding >> answer
+d. scale using StandardScale
+-
+8. What machine learning algorithm does not require feature scaling?
+a. SVM
+b. Neural Networks
+c. KNN
+d. Random Forest >> answer
+-
+9. How is PCA and LDA different?
+a. lda is supervised, pca is unsupervised >> answer
+b. pca is feature extraction, lda is dimension reduction
+c. pca uses the kernal trick
+d. lda produces orthogonal axes, pca does not
+-
+10. What is an advantage of LDA over PCA?
+a. It is less sensitive to outliers
+b. it is better at plotting separation between classes >> answer
+c. it is less sensitive to over fitting
+d. It does not require constructing an eigenvalue matrix
+-
+11. A model with high bias has:
+a. high training score but low validation score
+b. high training score and high validation score
+c. low training score and low validation score >> answer
+d. low training score but high validation score
+-
+12. which is not a way to deal with over fitting?
+a. collecting more training data
+b. reduce complexity of the model
+c. increase regularization parameters
+d. creating new features >> answer
+-
+13. Which ML algorithm is an ensemble approach?
+a. Random Forest >> answer
+b. Neural Network
+c. Support Vector Machine
+d. Logistic Regression
+-
+14. Which is a condition for the ensemble approach to be effective?
+a. the base classifiers must be dependent
+b. the base classifiers must perform better than random guessing >> answer
+c. there must be log(n) number of classifiers
+d. the classes must be normally distributed
+-
+15. Which package is not use with natural language processing?
+a. nltk
+b. sklearn
+c. pandas >> answer
+d. re
+-
+16. What does it mean that a word vector or bag of words is sparse?
+a. it is high dimensional
+b. it has a larger range
+c. it is not centered around a mean of zero
+d. it is mostly zeros >> answer
+-
+17. Which is not a regularization technique for linear regression?
+a. RMSE >> answer
+b. Ridge
+c. LASSO
+d. Elastic Net
+-
+18.  What is a way model a regression for non-linear data?
+a. Logistic Regression
+b. Random Forest Regression >> answer
+c. Ridge Regression
+d. Normalization
+-
+19. Which is not a clustering algorithm?
+a. hierarchical
+b. DBSCAN
+c. KNN >> answer
+d. Guassian
+-
+20. How is the elbow method used with K-Means?
+a. To visualize the trade-off between recall and precision
+b. To select the optimal number of epochs
+c. to visualize the convergence of the model
+d. The find the optimal number of clusters >> answer
+-
+21. What is a deep neural network?
+a. adeline with multiple layers >> answer
+b. a neural network that back propogates
+c. adeline with polynomic weights
+d. adeline with dozens of weights
+-
+22. How is stochastic gradient descent different from gradient descent?
+a. it tries several different starting points
+b. it approximates cost from a training sample >> answer
+c. learning rate decreases as it converges
+d. it returns all local minimums
+-
+23. What does L2 regularization do?
+a. It normalizes the data to mean 0 std 1
+b. it selects only the most import featues
+c. it makes the weights smaller >> answer
+d. it causes over fitting
+-
+24. Which is not a pro of KNN?
+a. almost no parameters
+b. accurate with large amount of low dimensional data
+c. If it totally fails its a good bench mark
+d. fast on lots of data >> answer
+-
+25. Which is not a feature selection tool?
+a. LDA >> answer
+b. Sequential Backward Selection
+c. Random Forest Feature Selection
+d. Correlation
+-
+26. What do you do if theres not enough data for validation?
+a. bootstrap
+b. train_test_split >> anser
+c. jacknife
+d. k-fold
+-
+27. How can you visualize a hierarchical clustering alogrithm?
+a. elbow graph
+b. decision tree
+c. dendrogram >> answer
+d. t-SNE
+-
+28. What can you do in a regression if the data is close to exponential?
+a. StandardScale the data
+b. L2 regularization
+c. Use ridge regression to shrink all irrelevant weights
+d. scales the axes before fitting >> answer
+-
+29. What is in the data mining domain?
+a. outliers detection >> answer
+b. classification
+c. regression
+d. feature selection
+-
+30. What is a similarity score option?
+a. Recall
+b. Pearson >> answer
+c. Precision
+d. Accuracy
+-
+31. What digital logic could a single layer perceptron not implement?
+a. Not
+b. And
+c. XOR >> answer
+d. OR
+-
+32. What is not an example of an activation function?
+a. ReLu
+b. Sigmoid
+c. tanh
+d. GINI >> answer
+-
+
+33. How can we harness ensemble learning if we can't change the model?
+a. use bagging to get new classifiers from resampling >> answer
+b. create multiple models with a param-grid of hyperparameters
+c. combine weights and probabilities
+d. you cant
+
+====================================== jifar=================================
+The main goal in supervised learning is to:
+A. learn a model from labeled training data that allows us to make predictions about unseen or future data
+B. learn a model from unlabeled training data that allows us to make predictions about unseen or future data
+C. unlearn a model from labeled training data that allows us to make predictions about unseen or future data
+D. unlearn a model from unlabeled training data that allows us to make predictions about unseen or future data
+Answer: A
+
+Classification is a subcategory of:
+A. unsupervised learning where the goal is to predict the categorical class labels of new instances, based on past observations
+B. supervised learning where the goal is to predict the categorical class labels of new instances, based on past observations
+C. supervised learning where the goal is to predict a continuous value for new instances, based on past observations
+D. supervised learning where the goal is to predict a continuous value for new instances, based on past observations
+Answer: b
+
+In the perceptron model, the net input  (where ‘w’ is the weights and ‘x’ are the features) is squashed into a binary output (–1 or 1) by the decision function of the perceptron which enables us to:
+A. merge two polynomial classes
+B. discriminate between polynomial classes.
+C. discriminate between two linearly separable classes
+D. merge two linearly separable classes.
+Answer: C
+
+In the perceptron, we don't initialize the weights to zero because:
+A. the learning rate only has an effect on the classification outcome if the weights are initialized to non-zero values
+B. the net input will always become zero if the weights are initialized as zero
+C. the learning rate will have a very high effect on the classification outcome if the weights are initialized to zero
+D. there exist alpha and omega which are imbalanced by the sigma function if weights are zero.
+Answer: A
+
+Compared to the perceptron, another simple, yet more powerful, algorithm for linear and binary classification problems is:
+A. principal component analysis
+B. logistic regression
+C. k-means
+D. gradient decent
+Answer: B
+
+Overfitting is a common problem in machine learning, where a model performs:
+A. poorly on training data but generalizes well to unseen data (test data).
+B. well on training data but does not generalize well to unseen data (test data).
+C. well on training data and performs more on unseen data (test data).
+D. poorly on both training data and on unseen data (test data).
+Answer: B
+
+Ordinal features can be understood as:
+a. numeric values that are too large
+b. numeric values that cannot be sorted or ordered
+c. categorical values that can be sorted or ordered
+d. categorical values that cannot be sorted or ordered
+Answer: c
+
+The idea behind one-hot-encoding is to:
+a. Remove binary features for each unique value in the numerical feature column
+b. Remove all feature for each value in the categorical feature column
+c. Create a new binary feature for each unique value in the numerical feature column
+d. Create a new binary feature for each unique value in the nominal feature column
+Answer: d
+
+In PCA, the component directions are highly sensitive to data scaling, thus we need to:
+a. remove the features prior to PCA if the features were measured on different scales
+b. remove the features after PCA if the features were measured on different scales
+c. standardize the features prior to PCA if the features were measured on different scales
+d. standardize the features after PCA if the features were measured on different scales
+Answer: c
+
+In Kernel PCA, using the kernel trick and a temporary projection into a higher-dimensional feature space, we are ultimately able to:
+a. compress datasets consisting of nonlinear features onto a lower-dimensional subspace where the classes became linearly separable.
+b. expand datasets consisting of linear features onto a higher-dimensional subspace where the classes became nonlinearly separable.
+c. consider class information in the training dataset to attempt to maximize the class-separability in a linear feature space
+d. consider class information in the training dataset to attempt to minimize the class-separability in a linear feature space
+Answer: a
+
+The learning curve allows us to:
+A. Detect whether a model suffers from high variance or high bias by plotting the model training and validation accuracies as functions of the training dataset size
+B. Reduce the dimensionality of the data by allowing the data to learn from the feature space by plotting the data on a transformed learning axis space.
+C. Calculate a method for training the model faster by using gradient descent combined with bootstrapping techniques.
+D. Is a system of ensemble methods that allow us to detect whether an algorithm is inherently flawed for machine learning.
+Answer: a
+
+Class imbalance influences a learning algorithm during model fitting itself because the:
+A. decision rule is likely going to be improved for both classes
+B. decision rule is likely going to be biased toward majority class
+C. imbalance better optimizes a reward or cost function that is computed as a sum over the training examples
+D. imbalance better optimizes a reward or cost function that is computed as a sum over the test examples
+Answer: b
+
+The goal of ensemble methods is to combine:
+a. different training datasets into a classifier that has better generalization performance than each individual dataset
+b.  different classifiers into a meta-classifier that has better generalization performance than each individual classifier
+c.  different training datasets into a classifier that has averaged data from each set
+d. PCA and KPCA to reduce the number of dimensions and improve accuracy.
+Answer: b
+
+A useful technique for reducing the variance of a model by drawing random bootstrap samples from the training dataset is:
+A. Bagging
+B. Boosting
+C. Browsing
+D. Batching
+Answer: a
+
+In the unigram bag-of-words model:
+a. PCA is used to reduce the number of dimensions of the model to a single word
+b. all the words in the vocabulary are represented together as a concatenated string
+c. each item or token in the vocabulary represents a single word
+d. each item or token in the vocabulary is represented by its translation
+Answer: c
+
+In NLP, stop words are words that are extremely:
+A. rare in all texts and bear no useful information to distinguish between different classes
+B. rare in all texts and thus provide very useful information to distinguish between different classes
+C. common in all texts and thus provide very useful information to distinguish between different classes
+D. common in all texts and bear no useful information to distinguish between different classes
+Answer: d
+
+In linear regression, the residuals for the best fit line are:
+a. the horizontal lines from the regression line to training examples
+b. the vertical lines from the regression line to training examples
+c. the diagonal distance from the training examples to the bias
+d. the differences between the y-intercept and the coefficient of correlation
+Answer: b
+
+
+Ordinary Least Squares attempts to
+A. estimate the parameters of the linear regression line that minimizes the sum of the residuals or errors to the training examples.
+B. estimate the parameters of the linear regression line that maximize the sum of the residuals or errors to the training examples
+C. estimate the least linear dependence between pairs of features
+D. estimate the least linear dependence between target variables
+Answer: a
+
+The purpose of clustering algorithms is to:
+a. to remove outliers in the data by grouping data using standard deviation
+b. to find a natural grouping in data
+c. to find a natural grouping of the best performing ensemble methods
+d. to remove outliers in the data by grouping data into averages
+Answer: b
+
+Which of the following is false about the difference between K-means and DBSCAN:
+A. DBSCAN does not make assumptions about spherical clusters like k-means
+B. DBSCAN does not partition the dataset into hierarchies that require a manual cut-off point
+C. DBSCAN assigns cluster labels based on dense regions of points
+D. DBSCAN reduces the feature space by a proportional ratio inversely equivalent to the correlation matrix
+Answer: d
+=================================== SAMI ALI=============================================================
+
+1) Which is not true about reinforcement learning?
+a) The goal is to develop a system that improves its performance based on interactions with the environment
+b) It can be considered a field related to unsupervised learning
+c) It is a measure of how well the action was measured by a reward function
+d) The system in reinforcement learning tries to maximize the reward by a series of interactions with the environment
+Answer: B
+
+2) Feature selection and dimensionality reduction belong to which part of the typical workflow in machine learning?
+a) Pre-processing
+b) Learning
+c) Evaluation
+d) Prediction
+Answer: A
+
+3) According to the simple perceptron learning rule, if the perceptron predicts the class label correctly:
+a) The weight is being pushed toward the negative target class
+b) The weight is being pushed toward the positive target class
+c) The weight remains unchanged
+d) The weight is never adjusted
+Answer: C
+
+
+4) The key difference between the Adaline rule and Perceptron rule is that:
+a) Adaline requires less epochs for the training error to converge.
+b) The weights are updated based on a linear activation function rather than a unit step function like in the perceptron.
+c) The accuracy score of the Perceptron is usually higher than Adaline
+d) Feature scaling can be applied in Adaline
+Answer: B
+
+5) If the algorithm requires more epochs until convergence, the learning rate is too:
+a) large
+b) small
+c) just right
+d) not enough information provided
+Answer: B
+
+6) The StandardScaler class from scikit-learn's preprocessing module:
+a) Standardizes features with 0 mean and unit variance.
+b) Scales each feature by its maximum absolute value
+c) Normalizes samples individually to unit norm.
+d) Transforms features using quantile information.
+Answer: A
+
+7) The stratify parameter from the train_test_split method:
+a) Shuffles the data before splitting into test and training sets
+b) Groups the data by a specified categorical variable
+c) Specifies the activation function.
+d) Returns training and test subsets that have the same proportions of class labels as the input dataset
+Anser: D
+
+8) Which of the following functions is the appropriate to encode nominal features:
+a) LabelHotEnconder
+b) Map
+c) Imputer
+d) OneHotEncoder
+Anser: D
+
+9) Which type of regularization can be interpreted as a feature selection?
+a) PCA
+b) L1 regularization
+c) L2 regularization
+d) Gamma
+Answer:B
+
+10) Which classification algorithm can be used to determine features importance?
+a) Logistic Regression
+b) Random Forests
+c) SVM
+d) Random Trees
+Answer: D
+
+11) Which of the following activation functions is used for Logistic Regression?
+a) Linear activation function
+b) Sigmoid activation function
+c) ReLu activation function
+d) Power function
+Answer: B
+
+12) Which is not true about PCA?
+a) It is unsupervised learning algorithm
+b) It can be used for feature extraction
+c) It aims at finding the max variance in a dataset
+d) It can be used for feature selection
+Answer: D
+
+13) Kernal PCA is more suitable dimension reduction method for:
+a) Linearly separable data
+b) Non-linearly separable data
+c) Data with a lot of noise
+d) Big data
+Answer: B
+
+14) If the model has both low training and cross-validation accuracies, it indicates that:
+a) it overfits the training data
+b) it has high bias
+c) it has high variance
+d) it has too much data
+answer: B
+
+15) Which part of dataset works for model selection in holdout method?
+a) Training dataset
+b) Validation dataset
+c) Test dataset
+d) Original dataset
+Answer: B
+
+
+16) Which of the following classifier is an ensemble method with bagging?
+a) Support Vector Machine
+b) Logistic Regression
+c) Random Forest
+d) Naive Bayes
+AnswerL C
+
+
+17) Which of the following is not common way to address overfitting?
+a) Increase the number of parameters of the model
+b) Collect more training data
+c) Reduce the complexity of the model
+d) Increase the regularization parameter
+Anser: A
+
+18) K-Means algorithm:
+a) Is initiated by randomly picking k centroids from the sample points
+b) Aims to maximize the number of points for each cluster
+c) Is a supervised learning technique
+d) Aims to minimize the distance between each cluster
+Answer:A
+
+19) What might lead a point to be labelled as an outlier in DBSCAN?
+a) DBSCAN does not detect outliers
+b) Next to few points
+c) Next to many points
+d) Next to points with low similarity score
+Anser: B
+
+20) Which type of clustering results can be visualized in a dendrogram representation?
+a) k-means
+b) hierarchical
+c) DBSCAN
+d) fuzzy
+Answer: B
+
+21) Collaborative Filtering:
+a) Recommend items to a customer based on previously rated highest items by the same customer
+b) Only rely on the features of the item
+c) Does not work well when a customer has a unique taste
+d) Always outperform content-based filtering
+Answer: C
+
+22) Mean shift algorithm:
+a) Requires specifying the number of clusters in advance
+b) Requires less computational resource than K-Means
+c) Stops when each point is assigned to a cluster
+d) Always finds the smallest number of clusters for all data points
+Answer: C
+
+23) Gradient descent allows us to update the weights based on:
+a) Least square of the accuracy
+b) Size of each class
+c) Median of false positive rate
+d) The derivative of the error
+Answer: D
+
+24) Which features should we choose to fit a linear regression model?
+a) Features that have a high correlation with target variable
+b) Features that have a high variance
+c) Features that have a low variance
+d) Features that have a low correlation with target variable
+answer: A
+
+25) Which is not true about k-means?
+a) Inappropriate k can result in poor performance
+b) Squared Euclidean distance can be used to evaluate the distance of data points
+c) We don’t need to scaling data before fit data into about k-means
+d) We can use elbow method to find optimal k
+Answer: C
+
+26) Which loss function is not an appropriate for a neural network?
+a) Mean squared error
+b) Step-wise indicator function
+c) Cross Entropy
+d) Relative Entropy
+Answer: B
+
+27) In a neural network:
+a) Increasing the number of hidden layers will always improve the accuracy of test data
+b) Increasing the number of layers can help learning features better
+c) Widening individual layers can help learning features better
+d) The problem of over-fitting is not present
+Answer: B
+
+28) Backpropagation is an algorithm used to train neural networks by:
+a) Updating the weights by calculating the partial derivative of the error with respect to a weight
+b) Minimizing the sum of squared errors
+c) Balancing bias and variance
+d) Reducing the weights during each epoch
+Answer: A
+
+29) Which of the following is wrong for Boosting?
+a) Boosting consists of very simple base classifiers。
+b) Boosting let the weak learners subsequently learn from misclassified training samples to improve the performance of the ensemble.
+c) Boosting can lead to a decrease in bias as well as variance compared to bagging models.
+d) A typical example of a strong learner is a decision tree stump
+Answer: D
+
+30) The resulting principal components from PCA is:
+a) Correlated if the input features are highly correlated
+b) Correlated even if the input features are not correlated
+c) Uncorrelated only if the input features are uncorrelated
+d) Uncorrelated even if the input features are highly correlated
+Answer: D
+
+31) Grid search:
+a) Is a method to optimize the number of feature
+b) Is a method to search for the best features
+c) Is a method to tune the model hyperparameter
+d) Is a method to search for the optimal way to split data
+Answer: C
+
+32) RNNs:
+a) Learn to recognize patterns across space by breaking a component into subcomponents
+b) Are ideal for images and video processing
+c) Build up memory in the process
+d) Is a type of feed-forward neural network
+Answer: C
+
+
+33) CNNs:
+a) Use ReLU as an activation function
+b) Constructs a feature hierarchy by extracting high-level features in the early layers
+c) Are ideal for text and speech analysis
+d) Constructs a feature hierarchy by combining low-level features
+Anser: D
+
+
+===================================Hao Nan Ou =============
+1.Which is an example of Supervised Learning?
+a. Decision Process
+b. Learn a series of action
+c. Direct feedback >> answer
+d. Find hidden structure in data
+
+2. Dimensionality reduction is the method of?
+   a. Supervised learning
+   b. Unsupervised learning >> answer
+   c. Reinforcement learning
+   d. Feature extraction
+3.Which method could use when the perceptron not stop?
+   a. Make two classes linearly separated
+   b. Update learning rate
+   c. Set a threshold >> answer
+   d. Dimension reduction
+
+  4. How to obtain satisfying results via SGD?
+   a. Shuffle the training dataset << answer
+   b. Standardization
+   c. Update learning rate
+   d. Using online learning
+
+5. Which following is correct about overfitting?
+   a. the model has lower performance on feature
+   b. the model contains high bias
+   c. the model has few parameters
+   d. the model is complex << answer
+
+6.Which is not corrected about regularization?
+   a. filter out noise from data
+   b. dealing with high correlation features
+   c. preventing overfitting
+   d. not require feature scaling << answer
+
+  7. Which of machine learning algorithm we don't need to worry about feature scaling?
+   a. random forests << answer
+   b. knn
+   c. logistic regression
+   d. SVM
+
+  8. Which is not correct about sequential backward selection(SBS)?
+   a. It automatically selects the most relevant feature to problem
+   b. improve computational efficiency
+   c. reduce the generalization error
+   d. can simply import by sklearn library << answer
+
+  9.Which is an unsupervised dimensionality reduction technique?
+   a. PCA << answer
+   b. LDA
+   c. KPCA
+   d. Cluster
+
+  10.What is correct about KPCA?
+   a. contains nonlinear features onto linear lower-dimension subspace >> answer
+   b. Dimensions are highly sensitive to data scaling
+   c. Consider class information in the dataset
+   d. It is another name of PCA
+
+  11. Which algorithm can be used to do diagnose bias and variance?
+   a. learning curves << answer
+   b. validation curves
+   c. k-fold cross-validation
+   d. trade of bias and variance
+
+  12. What is the difference between the Randomize hyperparameter search and Grid Search?
+   a. The randomized search usually performs well as Grid Search
+   b. Randomize hyperparameter search much more cost << answer
+   c. they are not different
+   d. Grid Search take more time to process
+ 13. which ensemble learning technique can use if we want to draw random samples data with replacement from initial data to reduce the variance of model?
+   a. Random Forest
+   b. Bagging >> answer
+   c. Boostrap
+   d. Boosting
+
+  14. Which ensemble methods based on 'weak learner'?
+   a. Bagging
+   b. Boosting >> answer
+   c. Majority voting
+   d. Precision
+
+  15.Instead of detection outliers, which algorithm we can use to fit the regression model?
+   a. RANdom SAmple Consensus (RANSAC) << answer
+   b. Ridge
+   c. LASSO
+   d. elastic Net
+
+  16. What is not correct describe for KNN?
+   a. slow on few data << answer
+   b. almost no parameters
+   c. need to feature selection for high dimension data
+   d. very accurate if data contains lower dimensions
+
+
+
+============================== ayub =======================================
+Q1. A clustering results in labels against unlabeled data, it is referred to
+A. predictive partitioning
+B. supervised labeling
+C. predictive labeling
+D. unsupervised classification
+Answer: D
+
+Q2. Which of the following is not method of clustering
+A. Nearest neighbor
+B. Centroid clustering
+C. Median clustering
+D. Quard clustering
+Answer: D
+
+Q3. Which of the following algorithm does not care feature scaling?
+A. KNN
+B. SVM
+C. Logistic Regression
+D. Random Forest
+Answer: D
+
+Q4. Which is not a solutions to reduce the generalization error?
+A. Collect more test data
+B. Introduce a penalty for complexity via regularization
+C. Choose a simpler model with fewer parameters
+D. Reduce the dimensionality of the data
+Answer: A
+
+Q5. Which of the following is a algorithm based on the idea of bagging?
+A. Decision Tree
+B. Regression
+C. Classification
+D. Random Forest
+Answer: D
+
+Q6. which of the following is the correct way to preprocess the data in performing regression or classification?
+A. Normalize the data → PCA → training
+B. PCA → normalize PCA output → training
+C. Normalize the data → PCA → normalize PCA output → training
+D. None of the above
+Answer: A
+
+Q7. Which distance measure method used by k-means clustering?
+A. Euclidean
+B. Centroid
+C. Manhattan
+D. Cluster
+Answer: A
+
+Q8. Which of the following is a regression problem?
+A. Can I determine a person's income based on their age and type of job?
+B. Which states have the highest infant mortality rate?
+C. How can I group supermarket products using purchase frequency?
+D. Identify similarities in shopping patterns between customers of a department
+Answer: A
+
+Q9. Which of the following model is not an example of ensemble learning?
+A) Random Forest
+B) Adaboost
+C) Gradient Boosting
+D) Decision Trees
+Answer: D
+
+Q10. What is not an example of an activation function?
+A. ReLu
+B. Sigmoid
+C. tanh
+D. GINI
+Answer: D
+
+Q11. How to select best hyperparameters in tree based models?
+A) Measure performance over training data
+B) Measure performance over validation data
+C) Both of these
+D) None of these
+Answer: B
+
+Q12. Which of the following is not true about boosting trees?
+A. In boosting trees, individual weak learners are independent of each other
+B. It is the method for improving the performance by aggregating the results of weak learners
+C. the main reason for having weak learners to prevent overfitting
+D. the main reason for having weak learners to prevent underfitting
+Answer: D
+
+Q13.  Which of the following is an example of a deterministic algorithm?
+A) PCA
+B) K-Means
+C) None of the above
+Answer: (A)
+
+Q14.  Which of the following statement(s) is / are true for Gradient Decent (GD) and Stochastic Gradient Decent (SGD)?
+A. In GD and SGD, you update a set of parameters in an iterative manner to minimize the error function.
+B. In SGD, you have to run through all the samples in your training set for a single update of a parameter in each iteration.
+C. In GD, you either use the entire data or a subset of training data to update a parameter in each iteration.
+D. In GD and SGD you update a set of parameters in an selective manner to minimize the error function.
+Answer: A
+
+Q15. What is pca.components_?
+A. Eigen vectors for the projection space
+B. Matrix of PCA components
+C. Result of the multiplication matrix
+D. None of the above options
+Answer: A
+
+Q16. Which of the following is one of the important step(s) to preprocess the text in NLP?
+A. Stemming
+B. Stop word removal
+C. Object Standardization
+D. all of above
+Answer: D
+
+Q17. Consider your majority class has 99% of train data. and your model report 99% accuracy on your
+training data. then which of the following True
+A. Accuracy score is not a good idea for imbalance dataset.
+B. Accuracy score is good idea for imbalance dataset.
+C. Precision and recall scores are good for imbalance dataset.
+D. Precision and recall scores are not good for imbalance dataset.
+Answer:A
+
+Q18. Which of the following is not related to feature selection?
+A. K-means
+B. Recursive Feature Elimination
+C. Principal Component Analysis
+D. Feature Importance
+Answer:A
+
+Q19. Which of the following corss-validation is recommended for small dataset?
+A. Holdout cross-validation
+B. 10-fold cross-validation
+C. Leave-one-out cross-validation (LOOCV)
+D. 5-fold cross-validation
+Answer: C
+
+Q20. What kind of Cross-validation is recommended for unbalaced dataset
+A. Holdout cross-validation
+B. Leave-one-out cross-validation (LOOCV)
+C. StratifiedKFold
+D. K-fold
+Answer: C
+
+Q21. Which of the following is not involved in data mining?
+A. knowledge extraction
+B. Data archaeology
+C. Data Exploration
+D. Data Transforms
+Answer: D
+
+Q22. Which is not a Vectorization method used in Sentiment analysis
+A. CountVectorizer
+B. TfidfVectorizer
+C. MeanVectorizer
+D. HashingVectorizer
+Answer: C
+
+Q23. Why we use RANSACRegressor?
+A. Throwing out outliers
+B. Minimizing overfitting
+C. Minimizing underfitting
+D. Regularization
+Answer: A
+
+Q24. which of the following is not a regularization method for linear regression?
+A. Ridge
+B. LASSO
+C. Gradient boasting
+D. Elastic Net
+Answer: C
+
+Q25. Which of the clustering algorithm capable of handling outlier and Identify mon-globular shapes?
+A. K-means
+B. DBSCAN
+C. Agglomerative
+D. K-mean++
+Answer: B
+
+Q26. Which is false about CNN
+A. Slow
+B. Fast and Realtime
+C. Pseudo-biological in basis
+D. Human-like abilities
+Answer: B
+
+Q27. TensorFlow is a --- library
+A. Deep Learning
+B. Image Processing
+C. Text Processing
+D. Clustering library
+
+
+=========================== maryum =====================
+
+chapter 1:
+
+1.Which one is not true about practical domain where Unsupervised learning can be applied ?
+a) no labels
+b) no feedback
+c) reward system
+d) find hidden structure in data
+answer : c
+
+2.Dimensionality reduction is not useful for ?
+a) data visualization
+b) limited storage space
+c) feature preprocessing
+d) find hidden structure in data
+
+answer : d
+
+chapter 2:
+3. What was the main point of difference between the Adaline & perceptron model?
+a) weights are compared with output
+b) sensory units result is compared with output
+c) analog activation value is compared with output
+d) all of the mentioned
+
+Answer: c
+Explanation: Analog activation value comparison with output, instead of desired output as in perceptron model was the main point of difference between the adaline & perceptron model.
+
+4. what is the another name of weight update rule in adaline model based on its functionality?
+a) LMS error learning law
+b) gradient descent algorithm
+c) both LMS error & gradient descent learning law
+d) delta square
+Answer: c
+Explanation: weight update rule minimizes the mean squared error(delta square), averaged over all inputs & this laws is derived using negative gradient of error surface weight space, hence option a & b
+
+Chapter 3
+5.Below are two statements given. Which of the following will be true both statements?
+	a)	k-NN is a memory-based approach is that the classifier immediately adapts as we collect new training data.
+	b)	The computational complexity for classifying new samples grows linearly with the number of samples in the training dataset in the worst-case scenario.
+  c)  Based on the features in our training dataset, the model learns a series of questions of infer the class labels
+
+    d) both a&b
+
+6. Which of the following statements is true for k-NN classifiers?
+
+A) The classification accuracy is better with larger values of k
+B) The decision boundary is smoother with smaller values of k
+C) The decision boundary is linear
+D) k-NN does not require an explicit training step
+Solution: D
+Option A: This is not always true. You have to ensure that the value of k is not too high or not too low.
+Option B: This statement is not true. The decision boundary can be a bit jagged
+Option C: Same as option B
+Option D: This statement is true
+
+
+Chapter 4
+
+7.Which of the following techniques would perform better for reducing dimensions of a data set?
+A. Removing columns which have too many missing values
+B. Removing columns which have high variance in data
+C. Removing columns with dissimilar data trends
+D. Removing columns randomly
+Solution: (A)
+If a columns have too many missing values, then we can remove such columns.
+
+8.which statement is not true ?
+a) Ordinal features can be understood as categorial values that can be sorted or ordered
+b) One Hot Encoding is when each unique label is mapped to an integer.
+c) Nominal features can be understood as categorial that do not imply any  order
+d) One Hot Encoding is one way to encode categorical variables for modeling
+answer : b
+
+Chapter 5
+9.When performing regression or classification, which of the following is the correct way to preprocess the data?
+a)  Normalize the data -> PCA -> training
+b) PCA -> normalize PCA output -> training
+c) Normalize the data -> PCA -> normalize PCA output -> training
+d) it is necessary to have a target variable for applying dimensionality reduction algorithms.
+answer : a
+
+10.The most popularly used dimensionality reduction algorithm is Principal Component Analysis (PCA). Which of the following is true about PCA?
+	a)	PCA is a supervised method
+	b)	It searches for the directions that data have the smallest variance
+	c)	Maximum number of principal components <= number of features
+	d)	Nonlinear dimensionality reduction
+answer : c
+
+Chapter 6:
+
+11) In a classification problems with highly imbalanced class. The majority class is observed 99% of times in the training data.
+Your model has 99% accuracy after taking the predictions on test data. Which of the following is true in such a case?
+	a)	Accuracy metric , Precision and recall are not a good idea for imbalanced class problems.
+	b)	Accuracy metric is a good idea for imbalanced class problems.
+	c)	Precision and recall metrics are good for imbalanced class problems.
+	d)	Precision and recall metrics aren’t good for imbalanced class problems.
+answer : c
+
+12.Imagine you are working on a project which is a binary classification problem. You trained a model on training dataset and get the below confusion matrix on validation dataset.
+
+n =165
+predicted :
+No
+predicted :
+yes
+Actual :
+no
+50
+10
+Actual :
+yes
+5
+100
+
+Based on the above confusion matrix, choose which option below will give you correct prediction?
+	a)	Accuracy is 0.98
+	b)	Misclassification rate is 0.91
+	c)	False positive rate is 0.95
+	d)	True positive rate is 0.95
+answer : d
+ The true Positive Rate is how many times you are predicting positive class correctly so true positive rate would be 100/105 = 0.95 also known as “Sensitivity” or “Recall”
+
+
+
+
+
+
+chapter 7
+
+13.Which of the following algorithm are not an example of ensemble learning algorithm?
+a) Random Forest
+b) Adaboost
+c) Gradient Boosting
+d) Decision Trees
+
+answer: d
+Decision trees doesn’t aggregate the results of multiple trees so it is not an ensemble algorithm.
+
+
+Chapter 8:
+15.N-grams are defined as the combination of N keywords together. How many 2-grams can be generated from given sentence:
+“Data Camp is a great source to learn data science”
+A) 7
+B) 8
+C) 9
+D) 10
+E) 11
+
+answer: (C)
+2-grams: Data Camp, Camp is, is a, a great, great source, source to, To learn, learn data, data science
+
+16.What is the right order for a text classification model components
+	1	Text cleaning
+	2	Text annotation
+	3	Gradient descent
+	4	Model tuning
+	5	Text to predictors
+a) 1-2-3-4-5
+b) 1-3-4-2-5
+c) 1-2-5-3-4
+d) 1-3-4-5-2
+
+answer: (c)
+A right text classification model contains – cleaning of text to remove noise, annotation to create more features, converting text-based features into predictors, learning a model using gradient descent and finally tuning a model.
+
+Chapter 10:
+
+17.Logistic Regression transforms the output probability to be in a range of [0, 1]. Which of the following function is used by logistic regression to convert the probability in the range between [0,1].
+a) Sigmoid
+b) Mode
+c) Square
+c) Probit
+answer : a
+Sigmoid function is used to convert output probability between [0,1] in logistic regression.
+
+18.Suppose we applied a logistic regression model on data and got training accuracy X and testing accuracy Y. Now I want to add few new features in data. Select option which is correct in such case.
+Note: Consider remaining parameters are same.
+	1	Training accuracy always decreases.
+	2	Training accuracy always increases or remain same.
+	3	Testing accuracy always decreases
+	4	Testing accuracy always increases or remain same
+
+a) Only 2
+b) Only 1
+c) Only 3
+d) Only 4
+answer: a
+Adding more features to model will always increase the training accuracy i.e. low bias. But testing accuracy increases if feature is found to be significant.
+
+
+
+Chapter 11:
+
+19.
+In which of the following cases will K-Means clustering does not fail to give good results?
+	a)	Data points with outliers
+	b)	Data points with different densities
+	c)	Data points with round shapes
+	d)	Data points with non-convex shapes
+
+answer: c
+K-Means clustering algorithm fails to give good results when the data contains outliers, the density spread of data points across the data space is different and the data points follow non-convex shapes
+
+
+20. What is not true about DBSCAN?
+	a)	DBSCAN is one approach to clustering which makes assumptions about spherical clusters  like k-means
+	b)	core point has at least  a specified number (MinPts) of neighboring points fall within the specified radius
+	c)	a border point is a point that has fewer neighbors than MinPts within 𝜀 , but lies within the 𝜀 radius of a core point
+  d) all the other points that are neither core nor border points are considered noise points
+answer : a
+
+Chapter 12:
+
+21. What is true regarding backpropagation rule?
+
+a) it is a feedback neural network
+b) actual output is determined by computing the outputs of units for each hidden layer
+c) hidden layers output is not all important, they are only meant for supporting input and output layers
+d)the objective of backpropagation algorithm develops learning algorithm for single layer feedforward neural network
+
+Answer: b
+Explanation: In backpropagation rule, actual output is determined by computing the outputs of units for each hidden layer.
+
+22.
+23. Regarding bias and variance, which of the follwing statements are true? (Here ‘high’ and ‘low’ are relative to the ideal model.)
+a)Models which overfit have a high bias.
+b)Models which overfit have a high bias.
+c) Models which underfit have a high variance.
+d)Models which underfit have a low variance.
+
+answer : d
+24. which is not true about KNN ?
+a) it preforms slow on large data
+b) it is very inaccurate with lower dimension
+c) can be very accurate despite of lower dimension
+d) high dimension needs feature selection to work
+
+answer : b
+
+25.Which of the following option is correct, when you are applying PCA on an image dataset?
+	a)	It can be used to effectively detect deformable objects.
+	b)	It is invariant to affine transforms.
+	c)	It can be used for lossy image compression.
+	d)	It is invariant to shadows.
+answer : c
+
+
+===================================== diallelo=============
+
+1. Which part of a machine learning project, would you do hyper parameter selection?
+a. EDA
+b. Train and Test --anser
+c. Model Evaluation
+
+2. Which of the following is not a ML model?
+a. K-Nearest Neighbors (KNN)
+b. Support Vector machine
+c. Ridge Regression  --nans
+
+
+3. Which is the formula of Leaky ReLU?
+a. Max (0, x)
+b. Max (x, x)  -- ans
+c. Max (-0.1x, x)
+
+
+4. Which of the method can’t be used to approximate of function?
+a. Fourier decomposition
+b. Splines
+c. Lasso --
+
+5. While finding trends, deviation of trends, periods, similarities and Network Analysis, you are doing:
+a. Data Mining --
+b. Machine learning
+c. Recommendation
+
+
+6. While doing Classification/Regression, removing outliers is ok when:
+a. Y is an outlier: You don’t know Y,
+b. X is an outlier (learn in training what that means)  ---
+c. f(X) is an outlier: you don’t know that from X
+
+7. which of the following is not true for the KNN?
+a. (Almost) no parameters
+b. Can be very accurate if lots of data and lower dimensions
+c. Very fast on large data set --
+
+8. Which of these methods is not Class Imbalance Strategies?
+a. Lots of data: Subsample big classes to have same size
+b. Bootstrap small classes by repeating data to big class is same size
+c. Use PCA to reduce features --
+
+
+9. Which of the following is/are true about Random Forest and Gradient Boosting ensemble methods?
+a. Both methods can be used for classification task  --
+b. Random Forest is use for classification only whereas Gradient Boosting is use only for regression task
+c. Random Forest is use for regression only whereas Gradient Boosting is use only for Classification task
+
+10. Which of the following algorithm is not an example of ensemble learning algorithm?
+a. Random Forest
+b. Adaboost
+c. Decision Trees --
+
+==================================================
+What is Clustering considered?
+Categorical Supervised    << ANSWER
+Numerical Unsupervised
+Numerical Supervised
+Categorical Unsupervised
+Which of the following is an example of Multiclass Classification?
+Spam vs Non-spam
+Handwritten character recognition   << ANSWER
+Predicting linear numerical values
+Predicting next tornado
+Which process removes noise from data?
+Supervised learning
+Unsupervised learning
+Reinforcement learning
+Dimension Reduction   << ANSWER
+Perceptron didn’t work for:
+Iris Data Set
+Wine Data Set
+Works for all
+XOR   << ANSWER
+Which regularization sets feature weights to zero?
+Ridge Regularization
+Forward Selection
+Lasso Regularization   << ANSWER
+Backward Selection
+Which determines boundary decisions for SVC?
+Separative data classes
+Support vectors   << ANSWER
+Slack variable
+Support data
+What’s classification error in decision trees?
+Measure of impurity   << ANSWER
+Measure of purity
+Measure of overfitting
+Measure of information gain
+Best method in dealing with decision tree overfitting:
+Cross validating and using Random forest   << ANSWER
+Cross validating and using R1
+Cross validating and using R2
+Using only hyperparameters
+KNN is lazy learner because
+It’s simple to use
+Learns discriminative function from training data
+Does not execute until action is called
+Does not learn discriminative function from training data but memorizes dataset instead   << ANSWER
+Which is best to encode categorical data?
+Label encoding
+Hot encoding
+One hot encoding   << ANSWER
+One label encoding
+A good standardization approach for outliers:
+Min-Max Scaler
+Standard Scaler
+Batch Scaler
+Robust Scaler   << ANSWER
+Feature selection implies:
+Transforming columns
+Completing dropping a column or keeping it   << ANSWER
+Use transformed columns together with original columns
+Use columns in PCA
+Which best describes PCA?
+Preserves separability among known groups
+Preserves variation between classes
+Preserves variation among features   << ANSWER
+It’s supervised learning algorithm
+Which best describes LDA (linear discriminative analysis)?
+Maximizes separability among known groups   << ANSWER
+Preserves variation between classes
+Preserves variation among features
+Maximizes variation among features
+Which of the following could be best used in reconstructing images?
+Multi-Dimensional Scaling
+LDA
+Deep Autoencoder   << ANSWER
+T-SNE
+Which describes overfitting?
+Low bias and low variance
+Low bias and high variance   << ANSWER
+High bias and low variance
+High bias and high variance
+Which describes underfitting?
+Low bias and low variance
+Low bias and high variance
+High bias and low variance    << ANSWER
+High bias and high variance
+What is the principle of SMOTE?
+Subsampling big classes to smaller sets
+Bootstrapping small classes by repeating data
+Subsampling small classes and adding to big classes
+Make fake data by linear combination of smaller classes   << ANSWER
+Random Forest uses the concept of
+Bagging   << ANSWER
+Stacking
+Adaptive Boosting
+Regular Boosting
+Which best describes plurality voting?
+Used in binary settings and select class label predicted by majority of classifiers
+Used in multiclass settings and select class label predicted by majority of classifiers   << ANSWER
+Used in multiclass settings and select class label predicted by minority of classifiers
+Used in binary settings and select class label predicted by minority of classifiers
+In using ensemble method
+Models must be dependent
+Training examples must be unique to each classifier
+Models must be independent   << ANSWER
+Training examples must be unique to all classifiers
+Which assigns topic to unlabeled text documents?
+LDA (Latent Dirichlet Allocation)
+N grams
+EM (Expectation Maximization)
+Topic Modelling   << ANSWER
+WORD2VEC is
+Supervised leaning algorithm that learn relationship between words
+Reinforcement leaning algorithm that learn relationship between words
+Supervised leaning algorithm that predicts word definition
+Unsupervised leaning algorithm that learn relationship between words   << ANSWER
+Which is used in topic modelling?
+LDA (Linear Discriminative Analysis)
+WORD2VEC
+LDA (Latent Dirichlet Analysis)   << ANSWER
+Autoencoder
+Which regularization is between R1 and R2?
+Ridge
+Tree limit
+Elastic   << ANSWER
+Lasso
+Which is the scale standard loss function used in linear regression?
+SSE
+MSE   << ANSWER
+R squared
+RANSAC
+Which fits regression to a subset of data?
+Regular linear regression
+Nonlinear regression
+Random forest regression
+RANSAC   << ANSWER
+Which is not a type of clustering?
+Hierarchical based clustering
+Density based clustering
+Prototype based clustering
+Trial based clustering   << ANSWER
+Difference between KMEANS and DBSCAN:
+KMEANS uses the notion of OPPOSITE distances (Euclidian distances) while DBSCAN is based on dense regions   << ANSWER
+KMEANS uses the notion of SAME distances (Euclidian distances) while DBSCAN is based on dense regions
+DBSCAN uses the notion of OPPOSITE distances (Euclidian distances) while KMEANS is based on dense regions
+ DBSCAN uses the notion of SAME distances (Euclidian distances) while KMEANS is based on dense regions
+Which of the following is not an example of partition clustering?
+Density Based Clustering
+Centroid Based Clustering
+Mean Shift
+Bi-Clustering   << ANSWER
+Logistic unit propagation can be thought of as
+Forward propagation in neural networks   << ANSWER
+Backward propagation in neural networks
+Middle propagation in neural networks
+Backward Step in neural networks
+Backward propagation moves from
+Left to right, computes error and gradient at each layer
+Right to left, computes only gradient at each layer
+Left to right, computes only gradient at each layer
+Right to left, computes error and gradient at each layer   << ANSWER
+Which is not an activation function used in neural networks?
+Cosh   << ANSWER
+Relu
+Softmax
+Sigmoid
+
+=============
+1
+Natasha Arokium final questions
+1. Which of the following classifiers is the fastest?
+a. SGD classifier
+b. Logistic regression
+c. Linear SVC
+d. Support Vector Machine
+2. Which one is not a characteristic of Supervised learning type of machine learning?
+a. Labeled data
+b. Find hidden structure in data
+c. Provides feedback
+d. Predict outcomes/futures
+3. Classification and regression fall under which type of machine learning category
+a. Reinforcement learning
+b. Unsupervised learning
+c. Supervised learning
+d. Dimension reduction
+4. The Perceptron machine learning algorithm is a
+a. Linear classifier
+b. Good for scalability and ease of use
+c. Binary classifier
+d. Used for both regression and classification
+5. What does the ‘no free lunch’ theorem by David H. Wolpert reiterate
+a. Logistic Regression should be the go-to machine learning algorithm
+b. No single classifier works best across all possible scenarios
+c. All machine learning algorithms should be tested, then chose the model with the best performance.
+d. All the above
+2
+6. What is the main goal of standardizing the features (standardScaler)?
+a. Decrease the size of the features
+b. Save on computational time and cost
+c. For optimal performance
+d. Because standardizing features is necessary during the preprocessing step
+7. Three impurity measures or splitting criteria used in decision trees are all below, except
+a. Gini impurity
+b. Entropy
+c. Classification error
+d. Train test split
+8. When the simple imputer class is activated, we are
+a. Replacing missing mean values along the columns
+b. We are replacing Nan values with 0
+c. We are dropping all NAN values
+d. Replacing missing values along the rows
+9. If we want to change nominal data into numerical values for machine learning, we use
+a. One hot encoding
+b. SVM
+c. Standardization
+d. .astype(int)
+10. To reduce complexity and avoid overfitting, the techniques would be all below, except
+a. Lasso
+b. PCA
+c. Standardization
+d. Dimensionality reduction
+11. Which of the following feature extraction techniques maximizes class separability?
+a. PCA
+b. KPCA
+c. LDA
+d. KMEANS
+3
+12. Which of the following dimension reduction technique falls under the unsupervised learning category?
+a. KPCA
+b. LDA
+c. PCA
+d. KNN
+13. When performing a hold out cross validation technique to evaluate the performance of a model, we split the data
+a. Higher percentage of training data, lower percentage of test data
+b. More training data, same amount for both validation and test data
+c. More test data, less training data
+d. Equal amount of data for testing and training
+14. K fold cross validation
+a. Is a resampling technique without replacement
+b. A sampling technique with replacement
+c. Yields a high variance
+d. Helps to separate the training data from the validation data
+15. How can one address the problem of overfitting?
+a. Collect more training data
+b. Decrease the regularization parameter
+c. Collect less training data
+d. Use a higher percentage of test data
+16. Bagging is an ensemble learning technique closely related to
+a. Majorityvote classifier
+b. Plurality
+c. Unanimity
+d. Bootstrap aggregating
+4
+17. A disadvantage of using ensemble technique
+a. The run time is extremely longer
+b. Increases computational complexity
+c. It is less reliable than individual classifier
+d. It slows down the system
+18. Sentimental analysis, a subdiscipline of the broader field of NPL is sometimes called
+a. AB testing
+b. Raw term frequency
+c. Opinion mining
+d. Term frequency inverse document frequency
+19. What role does the tokenize function play in the field of NPL?
+a. Transform a word into it’s root form
+b. Remove all common words
+c. Split the document into individual words
+d. Show the most commonly used words
+20. Which classifier is best known for text classifier?
+a. KNN
+b. Decision tress
+c. Linear regression
+d. Naïve bayes
+21. The goal of ___________ is to model the relationship between one or multiple features and a continuous target variable
+a. Logistic regression
+b. adaptive linear neuron
+c. linear regression
+d. gradient descent
+22. when we are working with very large datasets, what would be the negative impact of inverting the matrix (linear regression)?
+a. The cost(expensive)
+b. The speed(time)
+c. The efficiency
+d. There are no negative consequences
+5
+23. The most effective was to handle outliers when using linear regression would be
+a. Use a different/more appropriate machine learning algorithm
+b. Use random sample consensus (RANSAC) option
+c. Search for the outliers during EDA, then remove them
+d. Keep outliers if the are minimal in total
+24. Which of the following machine learning algorithms fall into the unsupervised learning category?
+a. KNN
+b. KMeans
+c. Naïve bayes
+d. Logistic regression
+25. What does the elbow method help us to achieve when using Kmeans clustering?
+a. See the maximum number of clusters to be chosen
+b. Decrease the size of the variance
+c. Estimate the optimal number of clusters
+d. Get a better understanding of our data set
+26. To evaluate the quality of clustering is by utilizing the silhouette analysis. Which of the options below is false?
+a. Silhouette clustering can also be applied to other clustering algorithms
+b. It measures how tightly grouped the clusters are
+c. The most important feature is counting the number of clusters
+d. It is a graphical tool for plotting a clustering algorithm
+27. Which of the following is not considered a clustering algorithm?
+a. Agglomerative hierarchical
+b. Kmeans
+c. KNN
+d. DBSCAN
+6
+28. Which DNN (deep neural network) application was not mentioned in chapter 12 as developed at major technology companies?
+a. Facebook deep face for tagging images
+b. Google’s new language translation service
+c. Technology to identify the US coins
+d. Protein 3d structure prediction from genes sequences
+29. The most popular deep neural network library in python is
+a. Kera
+b. Tensorflow
+c. Caffe
+d. Theano
+30. Some ways to detect anomalies in a dataset are, except
+a. Using the sort method
+b. Use the anomaly function in SPSS
+c. Using a box plot
+d. Use of a pie chart
+31. What does the technique “sequence Analysis” achieve?
+a. Track web purchases
+b. Avoid maintenance issues
+c. Add a time stamp
+d. Help with aggregating the data
+32. Which of the Machine Learning technique does not belong in the list below?
+a. Supervised learning
+b. Reinforcement
+c. Regression
+d. Unsupervised Learning
+33. When using cluster methods for categorical variables we can use chi-square distribution or
+a. Normal distribution
+b. Cross tabulation
+c. PCA
+d. KNN
+7
+34.
+=====================
+1. Which is not one of the three types of machine learning?
+
+a. guided learning >> answer
+
+b. supervised learning
+
+c. reinforcement learning
+
+d. unsupervised learning
+
+-
+
+2. What is the goal of reinforcement learning?
+
+a. to find hidden structural patterns in the data
+
+b. to develop a system that improves based on interactions with the environment >> answer
+
+c. to estimate the regression towards the mean
+
+d. to predict an outcome by training on data with know target values
+
+-
+
+3. What happens when the perceptron predicts a correct label?
+
+a. it updates the weights
+
+b. it adjusts for bias
+
+c. nothing changes >> answer
+
+d. it updates the weights based on learning rate
+
+-
+
+4. What is the key difference between adaline and perceptron?
+
+a.  the use of backpropogation to update weights
+
+b. the implementation of a learning rate
+
+c. the use of gradient descent
+
+d. the activation function >> answer
+
+-
+
+5. What is the no free lunch theorem?
+
+a. no single classifier works best in all scenarios >> answer
+
+b. the trade off between test score and train score
+
+c. the larger the range used in grid search the more resources it will use
+
+d. a neural network with enough nodes can fit to any data
+
+-
+
+6. What type of machine learning algorithm is logistic regression
+
+a. linear regression
+
+b. classification >> answer
+
+c. clustering
+
+d. SVM
+
+-
+
+7. What is a valid way to deal with with categorical data?
+
+a. drop categorical data columns
+
+b. replace with numeric value of choice
+
+c. convert using onehot encoding >> answer
+
+d. scale using StandardScaler
+
+-
+
+8. What machine learning algorithm does not require feature scaling?
+
+a. SVM
+
+b. Neural Networks
+
+c. KNN
+
+d. Random Forest >> answer
+
+-
+
+9. How is PCA and LDA different?
+
+a. lda is supervised, pca is unsupervised >> answer
+
+b. pca is feature extraction, lda is dimension reduction
+
+c. pca uses the kernal trick
+
+d. lda produces orthogonal axes, pca does not
+
+-
+
+10. What is an advantage of LDA over PCA?
+
+a. It is less sensitive to outliers
+
+b. it is better at plotting separation between classes >> answer
+
+c. it is less sensitive to over fitting
+
+d. It does not require constructing an eigenvalue matrix
+
+-
+
+11. A model with high bias has:
+
+a. high training score but low validation score
+
+b. high training score and high validation score
+
+c. low training score and low validation score >> answer
+
+d. low training score but high validation score
+
+-
+
+12. which is not a way to deal with over fitting?
+
+a. collecting more training data
+
+b. reduce complexity of the model
+
+c. increase regularization parameters
+
+d. creating new features >> answer
+
+-
+
+13. Which ML algorithm is an ensemble approach?
+
+a. Random Forest >> answer
+
+b. Neural Network
+
+c. Support Vector Machine
+
+d. Logistic Regression
+
+-
+
+14. Which is a condition for the ensemble approach to be effective?
+
+a. the base classifiers must be dependent
+
+b. the base classifiers must perform better than random guessing >> answer
+
+c. there must be log(n) number of classifiers
+
+d. the classes must be normally distributed
+
+-
+
+15. Which package is not use with natural language processing?
+
+a. nltk
+
+b. sklearn
+
+c. pandas >> answer
+
+d. re
+
+-
+
+16. What does it mean that a word vector or bag of words is sparse?
+
+a. it is high dimensional
+
+b. it has a larger range
+
+c. it is not centered around a mean of zero
+
+d. it is mostly zeros >> answer
+
+-
+
+17. Which is not a regularization technique for linear regression?
+
+a. RMSE >> answer
+
+b. Ridge
+
+c. LASSO
+
+d. Elastic Net
+
+-
+
+18.  What is a way model a regression for non-linear data?
+
+a. Logistic Regression
+
+b. Random Forest Regression >> answer
+
+c. Ridge Regression
+
+d. Normalization
+
+-
+
+19. Which is not a clustering algorithm?
+
+a. hierarchical
+
+b. DBSCAN
+
+c. KNN >> answer
+
+d. Guassian
+
+-
+
+20. How is the elbow method used with K-Means?
+
+a. To visualize the trade-off between recall and precision
+
+b. To select the optimal number of epochs
+
+c. to visualize the convergence of the model
+
+d. The find the optimal number of clusters >> answer
+
+-
+
+21. What is a deep neural network?
+
+a. adeline with multiple layers >> answer
+
+b. a neural network that back propogates
+
+c. adeline with polynomic weights
+
+d. adeline with dozens of weights
+
+-
+
+22. How is stochastic gradient descent different from gradient descent?
+
+a. it tries several different starting points
+
+b. it approximates cost from a training sample >> answer
+
+c. learning rate decreases as it converges
+
+d. it returns all local minimums
+
+-
+
+23. What does L2 regularization do?
+
+a. It normalizes the data to mean 0 std 1
+
+b. it selects only the most import featues
+
+c. it makes the weights smaller >> answer
+
+d. it causes over fitting
+
+-
+
+24. Which is not a pro of KNN?
+
+a. almost no parameters
+
+b. accurate with large amount of low dimensional data
+
+c. If it totally fails its a good bench mark
+
+d. fast on lots of data >> answer
+
+-
+
+25. Which is not a feature selection tool?
+
+a. LDA >> answer
+
+b. Sequential Backward Selection
+
+c. Random Forest Feature Selection
+
+d. Correlation
+
+-
+
+26. Which is not a valid approach when there is not enough data for validation?
+
+a. bootstrap
+
+b. train_test_split >> anser
+
+c. jacknife
+
+d. k-fold
+
+-
+
+27. How can you visualize a hierarchical clustering alogrithm?
+
+a. elbow graph
+
+b. decision tree
+
+c. dendrogram >> answer
+
+d. t-SNE
+
+-
+
+28. What can you do in a regression if the data is close to exponential?
+
+a. StandardScale the data
+
+b. L2 regularization
+
+c. Use ridge regression to shrink all irrelevant weights
+
+d. scales the axes before fitting >> answer
+
+-
+
+29. What is in the data mining domain?
+
+a. outliers detection >> answer
+
+b. classification
+
+c. regression
+
+d. feature selection
+
+-
+
+30. What is a similarity score option?
+
+a. Recall
+
+b. Pearson >> answer
+
+c. Precision
+
+d. Accuracy
+
+-
+
+31. What digital logic could a single layer perceptron not implement?
+
+a. Not
+
+b. And
+
+c. XOR >> answer
+
+d. OR
+
+-
+
+32. What is not an example of an activation function?
+
+a. ReLu
+
+b. Sigmoid
+
+c. tanh
+
+d. GINI >> answer
+
+-
+
+33. How can we harness ensemble learning if we can't change the model?
+
+a. use bagging to get new classifiers from resampling >> answer
+
+b. create multiple models with a param-grid of hyperparameters
+
+c. combine weights and probabilities
+
+d. you cant
+
+===

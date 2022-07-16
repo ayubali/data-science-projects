@@ -1,0 +1,1 @@
+spark-submit --num-executors 5 --executor-cores 5  --files hdfs:///data/share/bdm/neighborhoods.geojson,hdfs:///data/share/bdm/boroughs.geojson app.py  hdfs:///data/share/bdm/yellow_tripdata_2011-05.csv

@@ -1,0 +1,86 @@
+1. Which is not part of python collections:
+  A) Counter
+  B) re
+  C) OrderedDict
+  D) calendar
+
+  Answer:   D
+  Explanation: calendar is not from collections. calendar is itself a python module
+
+2. Which module in Python supports regular expressions?
+  A) re
+  B) regex
+  C) pyregex
+  D) none of the mentioned
+
+  Answer: A
+  Explanation: re is a part of the standard library and can be imported using: import re.
+
+3. Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing
+operation?
+  A) print(list1[0])
+  B) print(list1[:2])
+  C) print(list1[:-2])
+  D) all of the mentioned
+
+  Answer: d
+  Explanation: Slicing is allowed in lists
+
+
+4. What will be the output?
+   t = (1, 2, 4, 3, 8, 9)
+   [t[i] for i in range(0, len(t), 2)]
+
+   A) [2, 3, 9]
+   B) [1, 2, 4, 3, 8, 9]
+   C) [1, 4, 8]
+   D) (1, 4, 8)
+
+Answer:  C
+Explanation: List comprehension in the second line and in range using 2 as third params, it will return 0, 2, 4
+
+
+5. which are correct statement about machine learning
+  A) Giving computers the ability to learn to make decisions from data
+  B) Learning to predict whether an email is spam or not is an example of supervised Learning
+  C) Uncovering hidden patterns from unlabeled data is an example of unsupervised learning
+  D) All of above
+
+  Answer: D
+
+6. Which of the following step is performed by data scientist after acquiring the data ?
+ A) Data Cleansing
+ B) Data Integration
+ C) Data Replication
+ D) All of the Mentioned
+
+ Answer: A
+ Explanation: Data cleansing, data cleaning or data scrubbing is the process of detecting and correcting (or removing) corrupt or inaccurate records from a record set, table, or database.
+
+7.Which of the following testing is concerned with making decisions using data ?
+  A) Probability
+  B) Hypothesis
+  C) Causal
+  D) None of the mentioned
+
+  Answer: B
+  Explanation: The null hypothesis is assumed true and statistical evidence is required to reject it in favor of a research or alternative hypothesis.
+
+
+8.  ____  projection is used by google map.
+
+  A) Mercator
+  B) Gall Petter
+  C) Robinsion
+  D) Gnomonic
+
+  Answer:  A
+
+9.  Which of the following is not a machine learning algorithm?
+  A) SVG
+  B) SVM
+  C) Random forest
+  D) None of the Mentioned
+
+ Answer: A
+ Explanation: SVM stands for scalable vector machine.

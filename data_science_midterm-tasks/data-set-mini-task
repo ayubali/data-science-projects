@@ -1,0 +1,28 @@
+#Q. Apply sklean linear model to boston dataset and use 'data' as feature_names and  'target' as  target vairable("MEDV").
+#and predict target and evaluate your score.
+
+#Solution:
+
+from sklearn import datasets
+import numpy as np
+import pandas as pd
+from sklearn import linear_model
+
+#load boston data set
+data = datasets.load_boston()
+
+# Set the features
+df = pd.DataFrame(data.data, columns=data.feature_names)
+
+# Set the target
+target = pd.DataFrame(data.target, columns=["MEDV"])
+
+X = df
+y = target["MEDV"]
+
+lm = linear_model.LinearRegression()
+model = lm.fit(X,y)
+
+predictions = lm.predict(X)
+
+lm.score(X,y)
